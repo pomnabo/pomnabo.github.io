@@ -7,20 +7,42 @@
     background-color: #1b277c;
 }
 
-.row {
-    width: 100%;
-    
+/**Desktop View**/
+@media (min-width: 992px) {
+    .col-lg-4 {
+        width: 33.33%;
+        float: left;
+        border: 3px solid #edc133;
+    }
+}
+
+/**Tablet View**/
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+        width: 50%;
+        float: left;
+        border: 3px solid #edc133;
+    }
+}
+
+/**Mobile View**/
+@media (max-width: 767px) {
+    .col-sm-12 {
+        width: 100%
+        float: left;
+        border: 3px solid #edc133;
+    }
+
 }
 
 
-@media (min-width: 1200px) {
-
-
+.container {
+    width: 100%
 }
 
 .h1 {
     color: #edc133;
-    font: Impact;
+    font-family: Impact;
     font-size: 48px;
     text-align: center;
     padding: 20px;
@@ -29,11 +51,14 @@
     width: 500px;
 }
 
+
 .p {
     color: #ffffff;
-    font: 'Arial Narrow Bold';
+    font-family: 'Arial Narrow Bold';
     font-size: 24px;
     text-align: left;
     margin: 20px
+
+}
 
 }
