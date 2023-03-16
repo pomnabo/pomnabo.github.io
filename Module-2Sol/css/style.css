@@ -158,24 +158,7 @@ p {
 }
 
 /**Mobile View**/
-@media (max-width: 767px) {
-    .col-sm-1, .col-sm-2, .col-sm-3 {
-        float: left;
-    }
-
-    .col-sm-1 {
-        width: 100%;
-    }
-
-    .col-sm-2 {
-        width: 50%;
-    }
-
-    .col-sm-3 {
-        width: 33%;
-    }
-
-}
+/**Default Block Level Stacking**/
 
 
 
