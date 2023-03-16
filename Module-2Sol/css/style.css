@@ -1,4 +1,8 @@
-/** #edc133 yellow, #1b277c blue **/
+/** #edc133 yellow
+    #1b277c blue
+    #689969 bulbasaur
+    #bb896a charmander
+    #67a1b4 squirtle **/
 
 * {
     box-sizing: border-box;
@@ -24,7 +28,6 @@ body {
     padding: 20px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 20px;
 }
 
 
@@ -38,23 +41,81 @@ body {
     margin-left: auto;   
 }
 
-.row {
-    width: 100%;
+.outro {
+    color: #ffffff;
+    font-family: 'Impact';
+    font-size: 48px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-right: auto;
     margin-left: auto; 
+}
+
+.footer {
+    color: #ffffff;
+    font-family: 'Arial Narrow';
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    width: 100%;
 }
 
 p {
     font-family: 'Arial Narrow';
     font-size: 18px;
+    text-align: center;
     background-color: gray;
     border: 3px solid #edc133;
-    text-align: center;
     padding: 15px;
     margin: 10px;
-    
+    position: relative;
 }
 
+#Bulbasaur {
+    font-family: Impact;
+    font-size: 24px;
+    background-color: #689969;
+    border-left: 3px solid #edc133;
+    border-bottom: 3px solid #edc133;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#Charmander {
+    font-family: Impact;
+    font-size: 24px;
+    background-color: #bb896a;
+    border-left: 3px solid #edc133;
+    border-bottom: 3px solid #edc133;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+
+#Squirtle {
+    font-family: Impact;
+    font-size: 24px;
+    background-color: #67a1b4;
+    border-left: 3px solid #edc133;
+    border-bottom: 3px solid #edc133;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
 
 
 /**Desktop View**/
