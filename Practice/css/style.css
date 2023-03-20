@@ -5,14 +5,17 @@
 }
 
 body {
+    font-family: 'LongZhuTi', sans-serif;
     background-color: #61122f;
     color:#ffffff;
 }
 
 
 h1:hover 
-    {color: #ffffff;
-        background-color: #370f96;
+{
+    color: #ffffff;
+    background-color: #370f96;
+    
     
 }
 
