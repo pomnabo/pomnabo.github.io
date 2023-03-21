@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'LongZhuTi Regular';
-    src: url('https://github.com/maoken-fonts/LongZhuTi/releases/download/v1.000/LongZhuTi-Regular.ttf') format('truetype');
+    src: url('/fonts/LongZhuTi-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -17,6 +17,14 @@ body {
     background-color: #eeb233;
     color:#ffffff;
 }
+
+#header-nav {
+    background-color: #370f96;
+    border-radius: 0;
+    border: 0;
+}
+
+
 
 h1 {
     color:#370f96;
