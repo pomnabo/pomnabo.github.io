@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'LongZhuTi Regular';
-    src: url('css/fonts/LongZhuTi-Regular.ttf') format('truetype');
+    src: url('../css/fonts/LongZhuTi-Regular.ttf') format('truetype');
 }
 
 body {
@@ -21,7 +21,9 @@ body {
     border: 0;
 }
 
-
+#logo-img {
+    background: url("")
+}
 
 h1 {
     color:#370f96;
