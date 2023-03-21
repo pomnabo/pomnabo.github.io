@@ -10,29 +10,32 @@
 }
 
 body {
-    font-family: 'LongZhuTi';
-    background-color: #eeb233;
+    font-family: 'LongZhuTi', Helvetica, sans-serif;
+    background-color: #c52830;
     color:#ffffff;
 }
 
 #header-nav {
-    background-color: #370f96;
+    background-color: #eeb233;
     border-radius: 0;
     border: 0;
 }
 
 #logo-img {
-    background: url("")
+    background: url("../css/assets/logostocksm.png") no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 10px 15px 10px 0;
 }
 
 h1 {
-    color:#370f96;
+    color: #eeb233;
 }
 
 h1:hover 
 {
-    color: #ffffff;
-    background-color: #370f96;
+    color: #c52830;
+    background-color: #eeb233;
     
     
 }
