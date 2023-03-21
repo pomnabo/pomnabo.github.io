@@ -13,10 +13,13 @@
 
 body {
     font-family: 'LongZhuTi';
-    background-color: #61122f;
+    background-color: #eeb233;
     color:#ffffff;
 }
 
+h1 {
+    color:#370f96;
+}
 
 h1:hover 
 {
@@ -26,9 +29,5 @@ h1:hover
     
 }
 
-p
-    {background-color: #029ba0;}
 
 
-#butters
-    {color: #bbd001}
