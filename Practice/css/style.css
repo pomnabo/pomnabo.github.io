@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'LongZhuTi Regular';
-    src: url('fonts/LongZhuTi-Regular.ttf') format('truetype');
+    src: url('https://github.com/maoken-fonts/LongZhuTi/releases/download/v1.000/LongZhuTi-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
