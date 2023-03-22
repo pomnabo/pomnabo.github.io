@@ -23,22 +23,42 @@ body {
 
 #logo-img {
     background: url("../css/assets/logostocksm.png") no-repeat;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin: 10px 15px 10px 0;
 }
 
-h1 {
-    color: #eeb233;
+.navbar-brand {
+    padding: 25px;
 }
 
-h1:hover 
-{
-    color: #c52830;
-    background-color: #eeb233;
-    
-    
+.navbar-brand h1{ /**Restaurant Name**/
+    font-family: 'LongZhuTi';
+    color:#c52830;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 1px #165244;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 0.75;
 }
+
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+
+a {
+    color: #c52830;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #165244; 
+ 
+    cursor:pointer;  
+}
+
+
 
 
 
