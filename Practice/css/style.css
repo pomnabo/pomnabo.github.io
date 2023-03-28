@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'LongZhuTi';
-    src: url('../css/fonts/LongZhuTi-Regular.ttf') format('truetype');
+    src: url('../fonts/LongZhuTi-Regular.ttf') format('truetype');
 }
 
 body {
@@ -22,7 +22,7 @@ body {
 }
 
 #logo-img {
-    background: url("../css/assets/logostocksm.png") no-repeat;
+    background: url("../assets/logostocksm.png") no-repeat;
     width: 150px;
     height: 150px;
     margin: 10px 15px 10px 0;
