@@ -22,7 +22,7 @@ body {
 }
 
 #logo-img {
-    background: url("../assets/logostocksm.png") no-repeat;
+    background: url("../assets/logostockmain.png") no-repeat;
     width: 150px;
     height: 150px;
     margin: 10px 15px 10px 0;
@@ -48,7 +48,6 @@ body {
 }
 
 
-
 a {
     color: #c52830;
     text-decoration: none;
@@ -56,11 +55,156 @@ a {
 
 a:hover {
     color: #165244; 
- 
-    cursor:pointer;  
+    cursor: pointer;
+}
+
+#nav-list {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#nav-list a{
+    color:#c52830;
+    text-align: center;
+}
+
+#nav-list a:hover {
+    color:#eeb233;
+    background-color: #c52830;
+    font-size: 1.2em;
+}
+
+#nav-list a span {
+    font-size: 1.8em;
+}
+
+#collapsable-nav a {
+    font-size: 1.2em;
+}
+
+#collapsable-nav a span {
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+#phone {
+    margin-top: 5px;
+}
+
+#phone a {
+    color:#165244;
+    text-align: right;
+    padding-bottom: 0px;
+}
+
+#phone div {
+    color:#c52830;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header, .navbar-toggler-icon {
+    border: 1px solid #c52830;
+}
+
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -30px;
+}
+
+/** End Header **/
+
+
+/** Homepage **/
+
+.container .jumbotron {
+    box-shadow: 0px 0px 50px #165244;
+    border: 2px solid #eeb233;
+}
+
+#menu-tile, #specials-tile, #map-tile {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #eeb233;
+    overflow: hidden;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+    box-shadow: 0px 1px 5px 1px #eeb233;
 }
 
 
 
 
+/** Media Queries **/
 
+/** Large Devices Only **/
+@media (min-width: 1200px) {
+    .container .jumbotron {
+        background: url('../assets/backgroundstock.jpg') no-repeat center;
+        height: 675px;
+    }
+}
+
+/** Medium Devices Only **/
+@media (min-width: 992px) and (max-width: 1199px) {
+    #logo-img {
+        background: url("../assets/logostock-mediumdevice.png") no-repeat;
+        width: 100px;
+        height: 100px;
+        margin: 5px 5px 5px 0px;
+    }
+
+    .container .jumbotron {
+        background: url('../assets/backgroundstock.jpg') no-repeat center;
+        height: 558px;
+    }
+
+}
+
+/** Small Devices Only **/
+@media (min-width: 768px) and (max-width: 991px) {
+    .container .jumbotron {
+        background: url('../assets/backgroundstock.jpg') no-repeat center;
+        height: 432px;
+    }
+}
+
+/** Extra Small Devices Only **/
+@media (max-width: 767px) {
+    .navbar-brand {
+        padding-top: 10px;
+        height: 80px;
+    }
+
+    .navbar-brand h1{ /**Restaurant Name**/
+        padding-top: 10px;
+        font-size: 5vw; /** 1vw = 1% of viewport screen width **/
+    }
+    
+    #collapsable-nav a {
+        font-size: 1.2em;
+    }
+
+    #collapsable-nav a span {
+        font-size: 1em;
+        margin-right: 5px;
+    }
+
+    #call-btn {
+        font-size: 1.5em;
+        display: block;
+        margin: 0px 20px;
+        padding: 10px;
+        border: 2px #eeb233;
+        background-color: #c52830;
+        color: #eeb233;
+    }
+
+    #xs-deliver {
+        margin-top: 7px;
+        font-size: .7em;       
+    }
+}
