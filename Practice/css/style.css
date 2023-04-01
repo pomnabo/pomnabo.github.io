@@ -54,7 +54,7 @@ a {
 }
 
 a:hover {
-    color: #165244; 
+    color: #eeb233; 
     cursor: pointer;
 }
 
@@ -120,6 +120,13 @@ a:hover {
 .container .jumbotron {
     box-shadow: 0px 0px 50px #165244;
     border: 2px solid #eeb233;
+    margin-top: 30px;
+    padding: 0px;
+}
+
+#menu-tile, #specials-tile{
+    width: 360px;
+    margin: 0px auto 15px;
 }
 
 #menu-tile, #specials-tile, #map-tile {
@@ -133,6 +140,30 @@ a:hover {
 
 #menu-tile:hover, #specials-tile:hover, #map-tile:hover {
     box-shadow: 0px 1px 5px 1px #eeb233;
+}
+
+#menu-tile{
+    background: url('../assets/Taiwanese-Popcorn-Chicken-beyondkimcheedotcom.jpg') no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+#specials-tile {
+    background: url('../assets/sweetpotatopuffballstiffycooks.jpg') no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    background-color: #165244;
+    color: #eeb233;
+    opacity: .8;
 }
 
 
@@ -206,5 +237,19 @@ a:hover {
     #xs-deliver {
         margin-top: 7px;
         font-size: .7em;       
+    }
+}
+
+/** XXS Devices Only **/
+
+@media (max-width: 479px) {
+    .navbar-brand h1 {
+        padding-top: 5px;
+        font-size: 6vw;
+    }
+
+    #menu-tile, #specials-tile {
+        width: 280px;
+        margin: 0px auto 15px;
     }
 }
