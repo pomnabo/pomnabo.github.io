@@ -72,6 +72,7 @@ a:hover {
     color:#eeb233;
     background-color: #c52830;
     font-size: 1.2em;
+    line-height: 1.5;
 }
 
 #nav-list a span {
@@ -114,6 +115,53 @@ a:hover {
 
 /** End Header **/
 
+
+
+/** Footer **/
+
+.panel-footer{
+    margin-top: 30ps;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #eeb233;
+    border-top: 0px;
+}
+
+.panel-footer div.row {
+    margin-bottom: 35px;
+}
+
+#hours, #address {
+    line-height: 2;
+}
+
+#hours > span, #address > span {
+    color: #c52830;
+    font-size: 1.3em;
+}
+
+#testamonials p {
+    color: #165244;
+    font-size: .8em;
+    font-style: italic;
+}
+
+#testamonials span{
+    color: #c52830;
+    font-size: 1.2em;    
+}
+
+#testamonials p:nth-child(2) {
+    margin-top: 25px;
+}
+
+#address p {
+    color: #165244;
+    font-size: .8em;
+    line-height: 1.8;
+}
+
+/** End Footer **/
 
 /** Homepage **/
 
@@ -165,6 +213,7 @@ a:hover {
     color: #eeb233;
     opacity: .8;
 }
+
 
 
 
@@ -238,6 +287,24 @@ a:hover {
         margin-top: 7px;
         font-size: .7em;       
     }
+
+    /** XS Device End Header **/
+
+    /** XS Device Footer **/
+
+    .panel-footer section {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .panel-footer section:nth-child(3) {
+        margin-bottom: 0px;
+    }
+
+    .panel-footer section hr {
+        width: 50%;
+    }
+
 }
 
 /** XXS Devices Only **/
