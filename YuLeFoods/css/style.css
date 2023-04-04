@@ -263,7 +263,7 @@ a:hover {
 /** Media Queries **/
 
 /** Large Devices Only **/
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
     .container .jumbotron {
         background: url('../assets/backgroundstock.jpg') no-repeat center;
         height: 675px;
@@ -271,7 +271,7 @@ a:hover {
 }
 
 /** Medium Devices Only **/
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 992px) {
     #logo-img {
         background: url("../assets/logostock-mediumdevice.png") no-repeat;
         width: 100px;
@@ -287,7 +287,7 @@ a:hover {
 }
 
 /** Small Devices Only **/
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 576px) and (max-width: 767px) {
     .container .jumbotron {
         background: url('../assets/backgroundstock.jpg') no-repeat center;
         height: 432px;
@@ -295,7 +295,7 @@ a:hover {
 }
 
 /** Extra Small Devices Only **/
-@media (max-width: 767px) {
+@media (max-width: 575px) {
     .navbar-brand {
         padding-top: 10px;
         height: 80px;
@@ -360,5 +360,13 @@ a:hover {
     #menu-tile, #specials-tile {
         width: 280px;
         margin: 0px auto 15px;
+    }
+
+    .col-xxs-12 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        width: 100%;
     }
 }
