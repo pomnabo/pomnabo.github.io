@@ -42,20 +42,18 @@ body {
     line-height: 0.75;
 }
 
-
-.navbar-brand a:hover, .navbar-brand a:focus {
-    text-decoration: none;
-}
-
-
 a {
-    color: #c52830;
+    color: #eeb233;
     text-decoration: none;
 }
 
-a:hover {
-    color: #eeb233; 
-    cursor: pointer;
+.navbar-nav .active {
+    background-color: #165244;
+    color: #eeb233;
+}
+
+#nav-list .active {
+    color: #eeb233;
 }
 
 #nav-list {
@@ -63,8 +61,8 @@ a:hover {
     text-align: center;
 }
 
-#nav-list a{
-    color:#c52830;
+#nav-list a {
+    color: #c52830;
     text-align: center;
 }
 
