@@ -1,4 +1,4 @@
-pomnabo.github.io/YuLeFoods(Updating Bootstrap)/
+https://pomnabo.github.io/YuLeFoods(Updating%20Bootstrap)/
 
 
 This website was built as a concept piece; a working example of my abilities in web development, branding, graphic design, and copywriting. I am building this site alongside my course's practice lectures.
