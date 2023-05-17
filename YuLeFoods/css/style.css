@@ -6,5 +6,44 @@
 
 @font-face {
     font-family: 'LongZhuTi';
-    src: url('/fonts/LongZhuTi-Regular.ttf') format('truetype');
+    src: url('../fonts/LongZhuTi-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'LongZhuTi', Helvetica, sans-serif;
+    background-color: #c52830;
+    color:#ffffff;
+}
+
+
+/** Header **/
+#header-nav {
+    background-color: #eeb233;
+    border-radius: 0;
+    border: 0;
+}
+
+#logo-img {
+    background: url("../graphics/logo/logostockmain.png") no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0;
+}
+
+.navbar-brand {
+    padding-top: 25px;
+}
+
+.navbar-brand h1{ /**Restaurant Name**/
+    font-family: 'LongZhuTi';
+    color:#c52830;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px #165244;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 0.75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
 }
