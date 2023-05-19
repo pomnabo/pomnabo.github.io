@@ -17,6 +17,7 @@ body {
 
 
 /** Header **/
+
 #header-nav {
     background-color: #eeb233;
     border-radius: 0;
@@ -46,4 +47,62 @@ body {
 
 .navbar-brand a:hover, .navbar-brand a:focus {
     text-decoration: none;
+}
+
+#nav-list {
+    margin-top: 10px;
+}
+
+#nav-list a {
+    color: #c52830;
+    text-align: center;
+}
+
+#nav-list a:hover {
+    color: #eeb233;
+    background: #165244;
+    transition: .5s;
+}
+
+#nav-list a span {
+    font-size: 2em;
+}
+
+#phone {
+    margin-top: 5px;
+}
+
+#phone a {/** Phone Number **/
+    text-align: right;
+    padding-bottom: 0px;
+}
+
+#phone div {/** "We Deliver" **/
+    color: #ffffff;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid #c52830;
+}
+
+.navbar-header button.navbar-toggle:hover {
+    background-color: #165244;
+    transition: .5s;
+}
+
+.navbar-header button.navbar-toggle:focus {
+    background-color: #165244;
+    transition: .5s;
+}
+
+.navbar-header button.navbar-toggle:active {
+    background-color: #c52830;
+    transition: .5s;
+}
+
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -30px;
 }
