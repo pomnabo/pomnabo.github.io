@@ -102,6 +102,14 @@ body {
     transition: .5s;
 }
 
+.navbar-header .navbar-toggle.collapsed .icon-bar {
+    background-color: #eeb233;
+}
+  
+.navbar-header .navbar-toggle .icon-bar {
+    background-color: #eeb233;
+}
+
 .navbar-header button.navbar-toggle {
     clear: both;
     margin-top: -30px;
