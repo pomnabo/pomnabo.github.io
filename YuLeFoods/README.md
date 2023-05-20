@@ -2,7 +2,7 @@ https://pomnabo.github.io/YuLeFoods/
 
 This website is for practice writing html, css, and javascript.
 
-Bootstrap version from 2005 (v3?)
+Bootstrap version from 2015 (v3?)
 
 All images were pulled from Google image searches, and I do not own copyright to them; nor am I claiming copyright.
 
