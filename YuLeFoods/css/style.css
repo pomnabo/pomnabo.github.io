@@ -61,7 +61,7 @@ body {
 #nav-list a:hover {
     color: #eeb233;
     background: #165244;
-    transition: .5s;
+    transition: .3s;
 }
 
 #nav-list a span {
@@ -89,17 +89,17 @@ body {
 
 .navbar-header button.navbar-toggle:hover {
     background-color: #165244;
-    transition: .5s;
+    transition: .3s;
 }
 
 .navbar-header button.navbar-toggle:focus {
     background-color: #165244;
-    transition: .5s;
+    transition: .3s;
 }
 
 .navbar-header button.navbar-toggle:active {
     background-color: #c52830;
-    transition: .5s;
+    transition: .3s;
 }
 
 .navbar-header .navbar-toggle.collapsed .icon-bar {
@@ -114,3 +114,38 @@ body {
     clear: both;
     margin-top: -30px;
 }
+
+
+/** End Header **/
+
+/** Media Queries **/
+
+/********************** Large Devices Only **********************/
+@media (min-width: 1200px) {
+
+}
+
+/********************** Medium Devices Only *********************/
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Header */
+    #logo-img {
+        background: url('../graphics/logo/logostock-mediumdevice.png');
+        width: 100px;
+        height: 100px;
+        margin: 5px 5px 5px 0px;
+    /* End Header */
+    }
+}
+
+/********************** Small Devices Only **********************/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/********************** Large Devices Only **********************/
+@media (max-width: 767px) {
+
+}
+
+
+/** End Media Queries **/
