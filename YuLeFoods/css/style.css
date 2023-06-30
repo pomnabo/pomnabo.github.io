@@ -183,12 +183,12 @@ body {
 
 /********************** Large Devices Only **********************/
 
-@media (min-width: 1200px) {
+@media (min-width: 1447px) {
     /* Header */
     #logo-img {
-        background: url('../graphics/logo/logostock-mediumdevice.png');
-        width: 100px;
-        height: 100px;
+        background: url('../graphics/logo/logostockmain.png');
+        width: 150px;
+        height: 150px;
         margin: 5px 5px 5px 0px;    
     }
     /* End Header */
@@ -197,9 +197,9 @@ body {
     .container .jumbotron {
     margin-left: auto;
     margin-right: auto;
-    background: url('../graphics/backgroundstock.jpg') no-repeat center;
-    height: 640px;
-    width: 640px;
+    background: url('../graphics/jumbotronbig.jpg') no-repeat center;
+    height: 667px;
+    width: 1000px;
     box-shadow: 0px 0px 50px #165244;
     border: 2px solid #eeb233;
     /* End Home Page */
@@ -207,7 +207,7 @@ body {
 }
 
 /********************** Medium Devices Only *********************/
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1447px) {
     /* Header */
     #logo-img {
         background: url('../graphics/logo/logostock-mediumdevice.png');
@@ -221,9 +221,9 @@ body {
     .container .jumbotron {
     margin-left: auto;
     margin-right: auto;
-    background: url('../graphics/backgroundstock.jpg') no-repeat center;
-    height: 640px;
-    width: 640px;
+    background: url('../graphics/jumbotronbig.jpg') no-repeat center;
+    height: 667px;
+    width: 900px;    
     box-shadow: 0px 0px 50px #165244;
     border: 2px solid #eeb233;
     /* End Home Page */
