@@ -1,3 +1,8 @@
+/* Developer's Notes: */
+/* - there is an issue with the jumbotron image not loading at the intersection of breakpoints, so I have overlapped the breakpoints to maintain fluid responsivity. */
+/* - there is a resulting issue [from note above] with a breakpoint at 737px where the menu button displays incorrectly. */
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -38,7 +43,7 @@ body {
 .navbar-brand h1{ /**Restaurant Name**/
     font-family: 'LongZhuTi';
     color:#c52830;
-    font-size: 2em;
+    font-size: 1.8em;
     text-shadow: 1px 1px 1px #165244;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -47,6 +52,16 @@ body {
 
 .navbar-brand a:hover, .navbar-brand a:focus {
     text-decoration: none;
+}
+
+.navbar-brand p { /*"Best Taiwanese Food"*/
+    color: #165244;
+    font-size: 1em;
+    margin-top: 15px;
+}
+
+.navbar-brand p span {
+    vertical-align: middle;
 }
 
 #nav-list {
@@ -121,29 +136,160 @@ body {
 /** Media Queries **/
 
 /********************** Large Devices Only **********************/
+
 @media (min-width: 1200px) {
-
-}
-
-/********************** Medium Devices Only *********************/
-@media (min-width: 992px) and (max-width: 1199px) {
     /* Header */
     #logo-img {
         background: url('../graphics/logo/logostock-mediumdevice.png');
         width: 100px;
         height: 100px;
-        margin: 5px 5px 5px 0px;
-    /* End Header */
+        margin: 5px 5px 5px 0px;    
     }
+    /* End Header */
+
+    /* Home Page */
+    .container .jumbotron {
+    margin-left: auto;
+    margin-right: auto;
+    background: url('../graphics/backgroundstock.jpg') no-repeat center;
+    height: 640px;
+    width: 640px;
+    box-shadow: 0px 0px 50px #eeb233;
+    border: 2px solid #eeb233;
+    /* End Home Page */
+   }
 }
+
+/********************** Medium Devices Only *********************/
+@media (min-width: 992px) and (max-width: 1200px) {
+    /* Header */
+    #logo-img {
+        background: url('../graphics/logo/logostock-mediumdevice.png');
+        width: 100px;
+        height: 100px;
+        margin: 5px 5px 5px 0px;    
+    }
+    /* End Header */
+
+    /* Home Page */
+    .container .jumbotron {
+    margin-left: auto;
+    margin-right: auto;
+    background: url('../graphics/backgroundstock.jpg') no-repeat center;
+    height: 640px;
+    width: 640px;
+    box-shadow: 0px 0px 50px #eeb233;
+    border: 2px solid #eeb233;
+    /* End Home Page */
+   }
+}
+
+
 
 /********************** Small Devices Only **********************/
-@media (min-width: 768px) and (max-width: 991px) {
+
+@media (min-width: 767px) and (max-width: 992px) {
+    /* Home Page */
+    .container .jumbotron {
+    margin-left: auto;
+    margin-right: auto;
+    background: url('../graphics/backgroundstock.jpg') no-repeat center;
+    height: 640px;
+    width: 640px;
+    box-shadow: 0px 0px 50px #eeb233;
+    border: 2px solid #eeb233;
+    /* End Home Page */
+   }
+
+   #phone-btn { /* Phone Button */
+        text-align: center;
+        margin-bottom: 15px;        
+    }
+    
+    #phone-btn span {
+        color: #eeb233;
+        text-decoration: none;
+    }
+
+    #phone-btn a {
+        font-size: 1.5em;
+        color: #eeb233;
+        text-decoration: none;
+        border: 2px solid #eeb233;
+        background-color: #165244;
+    }
+
+    #phone-btn a:hover {
+        background-color: #eeb233;
+        color: #c52830;
+        transition: .3s;
+        box-shadow: 0px 0px 50px #eeb233;
+    }
 
 }
 
-/********************** Large Devices Only **********************/
+/********************** Extra Small Devices Only ****************/
+
 @media (max-width: 767px) {
+    .navbar-brand {
+        padding-top: 10px;
+        height: 80px;
+    }
+    
+    .navbar-brand h1{ /**Restaurant Name**/
+        font-size: 5vw;
+        padding-top: 10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        line-height: 0.75;
+        margin-right: 45px;
+    }
+
+    #phone-btn { /* Phone Button */
+        text-align: center;
+        margin-bottom: 15px;        
+    }
+    
+    #phone-btn span {
+        color: #eeb233;
+        text-decoration: none;
+    }
+
+    #phone-btn a {
+        font-size: 1.5em;
+        color: #eeb233;
+        text-decoration: none;
+        border: 2px solid #eeb233;
+        background-color: #165244;
+    }
+
+    #phone-btn a:hover {
+        background-color: #eeb233;
+        color: #c52830;
+        transition: .3s;
+        box-shadow: 0px 0px 50px #eeb233;
+    }
+
+    #collapsable-nav a { /* Navbar Button */
+        font-size: 1.2em;
+    }
+
+    #collapsable-nav a span {
+        font-size: 1em;
+        margin-right: 5px;
+    }
+
+    .container img {
+        margin-left: auto;
+        margin-right: auto;
+        border: 2px solid #eeb233;
+    }
+
+    .container .jumbotron {/* Main content Container */               
+        
+        background: none;
+        padding: 0px;       
+    }
 
 }
 
