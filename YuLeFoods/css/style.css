@@ -134,6 +134,59 @@ body {
 
 
 
+/** Footer **/
+
+.panel-footer {
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #eeb233;
+    border-top: 0px;
+}
+
+.panel-footer div.row {
+    margin-bottom: 35px;
+}
+
+#hours, #address {
+    line-height: 2;
+}
+
+#hours > span, #address > span {
+    color: #c52830;
+    font-size: 1.3em;
+}
+
+#address p {
+    color:#165244;
+    font-size: .8em;
+    line-height: 1.8em;
+}
+
+#testamonials {
+    font-style: italic;
+    line-height: 1.8em;
+}
+
+#testamonials p:nth-child(2) {
+    margin-top: 25px;
+}
+
+#testamonials p {
+    color: #165244;
+    font-size: .8em;
+    font-style: italic;
+}
+
+#people-say {
+    color: #c52830;
+    font-style: normal;
+    font-size: 1.3em;
+}
+
+/** END Footer **/
+
+
 
 /** Home Page **/
 
@@ -177,6 +230,43 @@ body {
 /** End Home Page **/
 
 
+/** Menu Page **/
+
+.category-tile {
+    position: relative;
+    border: 2px solid #eeb233;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0px auto 15px;
+}
+
+.category-tile span {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #165244;
+    color: #eeb233;
+    opacity: .8;
+}
+
+.category-tile:hover {
+    box-shadow: 0px 1px 5px 1px #eeb233;
+}
+
+#menu-categories-title {
+    background-color: #165244;
+    color: #eeb233;
+}
+
+#menu-categories-title + div {
+    margin-bottom: 50px;
+}
+
+/** END Menu Page **/
 
 
 /** Media Queries **/
