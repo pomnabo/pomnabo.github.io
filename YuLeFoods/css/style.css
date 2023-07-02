@@ -369,6 +369,12 @@ h3.menu-item-title {
     font-style: italic;
 }
 
+.menu-item-price span {
+    font-size: .7em;
+    font-style: italic;
+    line-height: 1.1em;
+}
+
 /** END Food Options Pages **/
 
 

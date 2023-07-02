@@ -47,13 +47,13 @@
                         <ul id="nav-list" class="nav navbar-nav navbar-right">
 
                             <li class="visible-xs">
-                                <a href="index.html">
-                                    <span class="glyphicon glyphicon-home"></span>
-                                    Main
-                                </a>
+                            <a href="index.html">
+                                <span class="glyphicon glyphicon-home"></span>
+                                Main
+                            </a>
                             </li>
 
-                            <li class="active">
+                            <li>
                                 <a href="menu-categories.html">
                                     <span class="glyphicon glyphicon-cutlery"></span>
                                     <br class="hidden-xs">
@@ -62,12 +62,12 @@
                             </li>
 
                             <li>
-                                <a href="calendar.html">
-                                    <span class="glyphicon glyphicon-calendar"></span>
-                                    <br class="hidden-xs">
-                                    Calendar
-                                </a>
-                              </li>
+                              <a href="calendar.html">
+                                  <span class="glyphicon glyphicon-calendar"></span>
+                                  <br class="hidden-xs">
+                                  Calendar
+                              </a>
+                          </li>
 
                             <li>
                                 <a href="about-us.html">
@@ -113,79 +113,96 @@
 
         <div id="main-content" class="container"> <!-- Main Content -->
 
-            <h2 id="menu-categories-title" class="text-center">Menu Categories</h2>
+          <h2 id="menu-categories-title" class="text-center">Dessert Menu</h2>
 
             <div id="location-blerb" class="text-center">
-                Pop-up location rotates to different locations weekly. Some menu items may not be available at certain locations.
-                <br>Please refer to our <a href="calendar.html">Events Calendar</a> for updates.
-              </div>
+                Dessert items are available on a rotating basis and change with each event.
+                <br>Please refer to our <a href="calendar.html">Events Calendar</a> for updates.             
+            </div>
 
-              <section id="menu-categories-page" class="row">
+            <section class="row"> <!-- Full Page Grid-->
 
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                  <a href="breakfast-spread.html">
-                    <div class="category-tile">
-                      <img height="200px" src="graphics/menu-items/breakfast-Dan-Bing.png" alt="Image of Dan Bing on a plate, drizzled with sauce and garnishes.">
-                      <span>Breakfast Spread</span>
+                <div class="menu-item-tile col-md-6"> <!-- Menu Item Cell Tile with Description -->
+                  <div class="row"> <!-- Subdivided Grid within Cell Tile -->
+
+                    <!-- <a href="beefnoodlesoup.html"> hyperlink to new description page -->
+                    <div class="col-sm-5"> <!-- Image Cell within subdivided grid -->
+                      <div class="menu-item-img">
+
+                        <span>*Most Popular!*</span>
+
+                        <div>D1</div>
+
+                        <img class="img-responsive" width="250" height="150" src="graphics/menu-items/dessert-mango-shaved-ice.png" alt="Image of Taiwanese style shaved ice with mango ice cream and mango slices.">
+                      </div>
+
+                      <div class="menu-item-price">$4.95</div>                    
                     </div>
-                  </a>
-                </div>
-        
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                  <a href="lunch-special.html">
-                    <div class="category-tile">
-                      <img height="200px" src="graphics/menu-items/meal-Danzai-noodles.jpg" alt="Image of Danzi noodles in a bowl.">
-                      <span>Lunch Special</span>
+
+                    <div class="menu-item-desc col-sm-7"> <!-- Description Cell within subdivided grid -->
+                      <h3 class="menu-item-title">Taiwanese Shave Ice</h3>
+                      <p class="menu-item-details">Choice of flavor: mango, taro, matcha & red bean, winter melon, mixed fruits, chocolate, strawberry.</p>
                     </div>
-                  </a>
+                    <!-- </a> anchor tag for new description page -->
+
+                  </div>
                 </div>
-        
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                  <a href="dinner-time.html">
-                    <div class="category-tile">
-                      <img height="200px" src="graphics/menu-items/meal-luwei.png" alt="Image of differnt options for the Lu Wei dish.">
-                      <span>Dinnertime</span>
+
+                <hr class="visible-xs">
+
+                <div class="menu-item-tile col-md-6"> <!-- Menu Item Cell Tile with Description -->
+                  <div class="row"> <!-- Subdivided Grid within Cell Tile -->
+
+                    <!-- <a href="danbing.html"> hyperlink to new description page -->
+                    <div class="col-sm-5"> <!-- Image Cell within subdivided grid -->
+                      <div class="menu-item-img">
+
+                        <div>D2</div>
+
+                        <img class="img-responsive" width="250" height="150" src="graphics/menu-items/dessert-douhua.jpg" alt="Image of sweet soy pudding and mochi toppings.">
+                      </div>
+
+                      <div class="menu-item-price">$3.95</div>                    
                     </div>
-                  </a>
-                </div>
-        
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                  <a href="happy-hour.html">
-                    <div class="category-tile">
-                      <img height="200px" src="graphics/menu-items/meal-xiaolongbao.jpg" alt="Image of soup dumplings in a bamboo steamer.">
-                      <span>Happy Hour</span>
+
+                    <div class="menu-item-desc col-sm-7"> <!-- Description Cell within subdivided grid -->
+                      <h3 class="menu-item-title">Dou Hua Sweet Soy Pudding</h3>
+                      <p class="menu-item-details">lorem ipsum fill dis in later :U select up to 3 toppings: mochi balls, aiyu grass jelly, tapioca boba, egg pudding.</p>
                     </div>
-                  </a>
+                    <!-- </a> anchor tag for new description page -->
+
+                  </div>
                 </div>
-        
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                  <a href="snack-time.html">
-                    <div class="category-tile">
-                      <img height="200px" src="graphics/menu-items/snack-Taiwanese-Popcorn-Chicken-beyondkimcheedotcom.jpg" alt="Image of popcorn fried chicken in a shallow dish.">
-                      <span>Snacks</span>
+
+                <hr class="visible-xs">
+
+                <div class="clearfix visible-lg-block visible-md-block"></div> <!--  *Add this to the end of ROWS that feature descriptions that are longer than the height of the row. this will fix the floating elements to sit as desired. -->
+
+                <div class="menu-item-tile col-md-6"> <!-- Menu Item Cell Tile with Description -->
+                  <div class="row"> <!-- Subdivided Grid within Cell Tile -->
+                    <div class="col-sm-5"> <!-- Image Cell within subdivided grid -->
+                      <div class="menu-item-img">
+
+                        <div>D3</div>
+
+                        <img class="img-responsive" width="250" height="150" src="graphics/menu-items/dessert-wheel-cakes.png" alt="Image of a box of Taiwanese wheel shaped waffle cake with red bean filling.">
+                      </div>
+
+                      <div class="menu-item-price">$1.50</div>                    
                     </div>
-                  </a>
-                </div>
-        
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                  <a href="dessert-menu.html">
-                    <div class="category-tile">
-                      <img height="200px" src="graphics/menu-items/dessert-wheel-cakes.png" alt="Image of a waffle dough 'wheel cake' with red bean filling spilling out.">
-                      <span>Desserts</span>
+
+                    <div class="menu-item-desc col-sm-7"> <!-- Description Cell within subdivided grid -->
+                      <h3 class="menu-item-title">Taiwanese Wheel Cake</h3>
+                      <p class="menu-item-details">lorem ipsum fill dis in later :U Choice of flavor: sweet cream, matcha, red bean, ube.</p>
                     </div>
-                  </a>
+
+                  </div>
                 </div>
-        
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                  <a href="drink-options.html">
-                    <div class="category-tile">
-                      <img height="200px" src="graphics/menu-items/Ydrink-bubbleteapearls.png" alt="Image of a glass of milk tea with tapioca pearls and a straw.">
-                      <span>Beverages</span>
-                    </div>
-                  </a>
-                </div>
-        
-              </section>
+
+                <hr class="visible-xs">              
+
+                
+            </section>               
 
         </div> <!-- END Main Content -->
 
