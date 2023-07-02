@@ -46,13 +46,13 @@
 
                         <ul id="nav-list" class="nav navbar-nav navbar-right">
 
-                            <li class="visible-xs active">
-                                <a href="index.html">
-                                    <span class="glyphicon glyphicon-home"></span>
-                                    Main
-                                </a>
+                            <li class="visible-xs">
+                            <a href="index.html">
+                                <span class="glyphicon glyphicon-home"></span>
+                                Main
+                            </a>
                             </li>
-                            
+
                             <li>
                                 <a href="menu-categories.html">
                                     <span class="glyphicon glyphicon-cutlery"></span>
@@ -105,38 +105,118 @@
 
         <div id="main-content" class="container"> <!-- Main Content -->
 
-            <div class="jumbotron">
-                <img src="graphics/backgroundstock.jpg" alt="Image of an alley way in Taiwan." class="img-responsive visible-xs">
+          <h2 id="menu-categories-title" class="text-center">Breakfast Spread</h2>
+
+            <div id="location-blerb" class="text-center">
+                Add 早奶茶 Morning Milk Tea, Soy Milk, or 茶葉蛋 Cha Ye Dan Tea Egg for just $1 each!
+                <br class="note">*Milk tea is premade, so we charge an additional fee of $1 to make milk tea with soy milk.
             </div>
 
-            <div id="home-tiles" class="row"> <!-- Home Tiles -->
+            <section class="row"> <!-- Full Page Grid-->
 
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <a href="menu-categories.html">
-                        <div id="menu-tile">
-                            <span>Menu</span>
-                        </div>
-                    </a>
+                <div class="menu-item-tile col-md-6"> <!-- Menu Item Cell Tile with Description -->
+                  <div class="row"> <!-- Subdivided Grid within Cell Tile -->
+
+                    <!-- <a href="beefnoodlesoup.html"> hyperlink to new description page -->
+                    <div class="col-sm-5"> <!-- Image Cell within subdivided grid -->
+                      <div class="menu-item-img">
+
+                        <div>B1</div>
+
+                        <img class="img-responsive" width="250" height="150" src="graphics/menu-items/breakfast-beefnoodles.png" alt="Image of Beef Noodle Soup">
+                      </div>
+
+                      <div class="menu-item-price">$7.95</div>                    
+                    </div>
+
+                    <div class="menu-item-desc col-sm-7"> <!-- Description Cell within subdivided grid -->
+                      <h3 class="menu-item-title">牛肉麵 Beef Noodle Soup</h3>
+                      <p class="menu-item-details">lorem ipsum fill dis in later :U</p>
+                    </div>
+                    <!-- </a> anchor tag for new description page -->
+
+                  </div>
                 </div>
 
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <a href="specials-categories.html">
-                        <div id="specials-tile">
-                            <span>Specials</span>
-                        </div>
-                    </a>
+                <hr class="visible-xs">
+
+                <div class="menu-item-tile col-md-6"> <!-- Menu Item Cell Tile with Description -->
+                  <div class="row"> <!-- Subdivided Grid within Cell Tile -->
+
+                    <!-- <a href="danbing.html"> hyperlink to new description page -->
+                    <div class="col-sm-5"> <!-- Image Cell within subdivided grid -->
+                      <div class="menu-item-img">
+
+                        <div>B2</div>
+
+                        <img class="img-responsive" width="250" height="150" src="graphics/menu-items/breakfast-Dan-Bing.png" alt="Image of Dan Bing on a plate.">
+                      </div>
+
+                      <div class="menu-item-price">$7.95</div>                    
+                    </div>
+
+                    <div class="menu-item-desc col-sm-7"> <!-- Description Cell within subdivided grid -->
+                      <h3 class="menu-item-title">蛋餅 Dan Bing</h3>
+                      <p class="menu-item-details">lorem ipsum fill dis in later :U  choice of filling: plain, you tiao, ham and cheese, pork floss and scallions. add egg or extra topping for $1 each.</p>
+                    </div>
+                    <!-- </a> anchor tag for new description page -->
+
+                  </div>
                 </div>
 
-                <div class="col-md-4 col-xs-12">
-                    <a href="https://goo.gl/maps/rf4hWjNM5gUdJAK37" target="_blank">
-                        <div id="map-tile">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d3672.7624016768505!2d120.21424800000001!3d22.995763!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDU5JzQ0LjciTiAxMjDCsDEyJzUzLjMiRQ!5e0!3m2!1sen!2sus!4v1688122658502!5m2!1sen!2sus" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            <span>Map</span>
-                        </div>
-                    </a>
+                <hr class="visible-xs">
+
+                <div class="clearfix visible-lg-block visible-md-block"></div> <!--  *Add this to the end of ROWS that feature descriptions that are longer than the height of the row. this will fix the floating elements to sit as desired. -->
+
+                <div class="menu-item-tile col-md-6"> <!-- Menu Item Cell Tile with Description -->
+                  <div class="row"> <!-- Subdivided Grid within Cell Tile -->
+                    <div class="col-sm-5"> <!-- Image Cell within subdivided grid -->
+                      <div class="menu-item-img">
+
+                        <div>B3</div>
+
+                        <img class="img-responsive" width="250" height="150" src="graphics/menu-items/breakfast-doujiangyoutiao.jpg" alt="Image of Chinese Fried Dough Stick with Savory Soy Milk Soup.">
+                      </div>
+
+                      <div class="menu-item-price">$5.95</div>                    
+                    </div>
+
+                    <div class="menu-item-desc col-sm-7"> <!-- Description Cell within subdivided grid -->
+                      <h3 class="menu-item-title">豆漿油條 Chinese Donut with Savory Soy Milk</h3>
+                      <p class="menu-item-details">lorem ipsum fill dis in later :U</p>
+                    </div>
+
+                  </div>
                 </div>
 
-            </div> <!-- END Home Tiles -->
+                <hr class="visible-xs">
+
+                <div class="menu-item-tile col-md-6"> <!-- Menu Item Cell Tile with Description -->
+                  <div class="row"> <!-- Subdivided Grid within Cell Tile -->
+                    <div class="col-sm-5"> <!-- Image Cell within subdivided grid -->
+                      <div class="menu-item-img">
+
+                        <div>B4</div>
+
+                        <img class="img-responsive" width="250" height="150" src="graphics/menu-items/breakfast-Mushroom-Congee.jpg" alt="Image of a bowl of Congee with mushrooms.">
+                      </div>
+
+                      <div class="menu-item-price">$5.95</div>                    
+                    </div>
+
+                    <div class="menu-item-desc col-sm-7"> <!-- Description Cell within subdivided grid -->
+                      <h3 class="menu-item-title">蘑菇粥 Mushroom Congee</h3>
+                      <p class="menu-item-details">lorem ipsum fill dis in later :U  choice of filling: plain, you tiao, ham and cheese, pork floss and scallions. add egg or extra topping for $1 each.</p>
+                    </div>
+
+                  </div>
+                </div>
+
+                <hr class="visible-xs">
+
+                <div class="clearfix visible-lg-block visible-md-block"></div>
+
+            </section>               
 
         </div> <!-- END Main Content -->
 
