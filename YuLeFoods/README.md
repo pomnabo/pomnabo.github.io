@@ -16,6 +16,8 @@ The overall function and foundation of this website project has been completed, 
 -copy for the Awards page
 -copy for Testamonials on the Awards page
 
+*-update color scheme for more accessible readability (test grayscale)
+
 I will add these details at a later time. For now, this project is considered complete for the purpose of the course I was working on it for.
 
 Note: The restaurant "YuLe Street Foods" is not a real place (as far as I'm aware). It is merely a concept to guide my practice.
