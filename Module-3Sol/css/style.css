@@ -3,3 +3,102 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    background-color: #9b9c82;
+    color: #ffffff;
+}
+
+#header-nav {
+    background-color: #1e8875;
+    color: #ffffff;
+    border: none;    
+}
+
+.navbar-brand {
+    margin-bottom: 50px;
+}
+
+.navbar-brand h1 {
+    width: auto;
+    text-decoration: none;
+    color: #f7e476;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 2px solid #1e8875;
+}
+
+.navbar-header button.navbar-toggle:focus {
+    background-color: #f7e476;
+    transition: .3s;
+}
+
+.navbar-header button.navbar-toggle:active {
+    background-color: #f7e476;
+    transition: .3s;
+}
+  
+.navbar-header .navbar-toggle .icon-bar {
+    background-color: #f7e476;
+}
+
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -70px;
+    background-color: #9b9c82;
+}
+
+.navbar-header button.navbar-toggle:hover {
+    background-color: #f7e476;
+    transition: .3s;
+}
+
+#nav-list a {
+    color: #1e8875;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3em;
+    background-color: #9b9c82;
+}
+
+#nav-list a:hover {
+    color: #f7e476;
+    background: #1e8875;
+    transition: .3s;
+    font-weight: bold;
+}
+
+#main-content {
+    width: 100%;
+}
+
+#menu-title {
+    color: #1e8875;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+#food-item {
+    text-align: center;
+    text-align: left;
+    background-color: #1e8875;
+    padding: 0px 15px 15px 15px;
+    position: absolute;
+}
+
+#food-item h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #f7e476;
+    text-align: center;
+}
+
+#food-item p {
+    background-color: none;
+}
+
+
+
