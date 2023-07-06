@@ -73,31 +73,75 @@ body {
 
 #main-content {
     width: 100%;
+    padding: 0px;
 }
 
 #menu-title {
     color: #1e8875;
     font-size: 1.8em;
     font-weight: bold;
+    margin-bottom: 35px;    
 }
 
-#food-item {
-    text-align: center;
-    text-align: left;
+#menu-title h2 {
+    box-shadow: 1px 5px 1px 0px #f7e476
+}
+
+#chickendiv {    
     background-color: #1e8875;
     padding: 0px 15px 15px 15px;
     position: absolute;
 }
 
-#food-item h3 {
-    font-size: 1.3em;
+#chickendiv h3 {
+    font-size: 1.5em;
     font-weight: bold;
     color: #f7e476;
     text-align: center;
+    padding-top: 5px;
 }
 
-#food-item p {
-    background-color: none;
+#chickendiv p {
+    text-align: left;
+    
+}
+
+#beefydiv {    
+    background-color: #1e8875;
+    padding: 0px 15px 15px 15px;
+    position: absolute;
+}
+
+#beefydiv h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f7e476;
+    text-align: center;
+    padding-top: 5px;
+}
+
+#beefydiv p {
+    text-align: left;
+    
+}
+
+#sushidiv {    
+    background-color: #1e8875;
+    padding: 0px 15px 15px 15px;
+    position: absolute;
+}
+
+#sushidiv h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f7e476;
+    text-align: center;
+    padding-top: 5px;
+}
+
+#sushidiv p {
+    text-align: left;
+    
 }
 
 
