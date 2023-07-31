@@ -57,7 +57,7 @@ body {
 }
 
 #nav-list a {
-    color: #1e8875;
+    color: #f7e476;
     text-align: center;
     font-weight: bold;
     font-size: 1.3em;
@@ -65,7 +65,7 @@ body {
 }
 
 #nav-list a:hover {
-    color: #f7e476;
+    color: #ffffff;
     background: #1e8875;
     transition: .3s;
     font-weight: bold;
@@ -77,72 +77,42 @@ body {
 }
 
 #menu-title {
-    color: #1e8875;
+    color: #f7e476;
     font-size: 1.8em;
     font-weight: bold;
-    margin-bottom: 35px;    
+    margin-bottom: 35px; 
 }
 
-#menu-title h2 {
-    box-shadow: 1px 5px 1px 0px #f7e476
+#menu-item {    
+    padding: 10px;
+    text-align: left;
 }
 
-#chickendiv {    
-    background-color: #1e8875;
-    padding: 0px 15px 15px 15px;
-    position: absolute;
+#menu-item a:hover{
+    text-decoration: none;
+    color: #ffffff;
+    transition: .3s;
 }
 
-#chickendiv h3 {
+#menu-item a{
+    color: #f7e476;
+}
+
+#menu-item h3 {
     font-size: 1.5em;
     font-weight: bold;
     color: #f7e476;
+    background: none;
     text-align: center;
-    padding-top: 5px;
+    margin: 0px;
+    padding: 5px;
 }
 
-#chickendiv p {
-    text-align: left;
-    
+#menu-item p {
+    padding: 15px;
+    background-color: #1e8875;    
 }
 
-#beefydiv {    
-    background-color: #1e8875;
-    padding: 0px 15px 15px 15px;
-    position: absolute;
+#item-tiles {
+    margin: 15px;
 }
-
-#beefydiv h3 {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #f7e476;
-    text-align: center;
-    padding-top: 5px;
-}
-
-#beefydiv p {
-    text-align: left;
-    
-}
-
-#sushidiv {    
-    background-color: #1e8875;
-    padding: 0px 15px 15px 15px;
-    position: absolute;
-}
-
-#sushidiv h3 {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #f7e476;
-    text-align: center;
-    padding-top: 5px;
-}
-
-#sushidiv p {
-    text-align: left;
-    
-}
-
-
-
