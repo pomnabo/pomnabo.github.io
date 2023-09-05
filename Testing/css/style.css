@@ -273,19 +273,7 @@ li {
 
 /** Previous Page **/
 
-#results-content {
-    font-family: 'ROG Fonts';
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-#results-content p {
-    font-size: 1.5em;
-    color: #00B598;
-    line-height: 2;
-}
 
 /** End Previous Page **/
 
