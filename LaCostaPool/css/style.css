@@ -7,12 +7,12 @@
 }
 
 @font-face {
-    font-family: 'ROGFonts-Regular, Arial, sans-serif';
+    font-family: 'ROG Fonts';
     src: url('../assets/ROGFonts-Regular.otf') format('opentype');
 }
 
 body {
-    font-family: 'ROGFonts-Regular, Arial, sans-serif';
+    font-family: 'ROG Fonts,' Arial, sans-serif;
     background-color: #f0f0f0;
     color:#1D1114;
 }
@@ -29,7 +29,6 @@ a:hover {
 
 
 #main-content p {
-    font-family: 'Arial, sans-serif';
     font-weight: bold;
     font-size: 1.5em;
 }
@@ -41,6 +40,7 @@ img {
 }
 
 h2 {
+    font-family: 'ROG Fonts';
     font-size: 2em;
     color: #D60F42;
     line-height: 2;
@@ -48,6 +48,7 @@ h2 {
 }
 
 h3 {
+    font-family: 'ROG Fonts';
     font-size: 1.3em;
     line-height: 1.5em;
 }
@@ -58,7 +59,6 @@ h3 {
     background-color: #1D1114;
     border-radius: 0;
     border: 0;
-    font-size: 1.5em;
 }
 
 #nav-list {
@@ -67,12 +67,14 @@ h3 {
 }
 
 #nav-list a {
+    font-family: 'ROG Fonts';
+    font-size: 1.3em;
     color: #1D1114;
     border-radius: 5px;
     background: #F0C358;
     padding: 16px 32px;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 15px; 
 }
 
 #nav-list a:hover {
@@ -152,6 +154,7 @@ h3 {
 #signup > span, #contact > span, #disclaimer > span {
     color: #D60F42;
     font-size: 1.5em;
+    font-family: 'ROG Fonts';
 }
 
 #signup p, #contact p, #disclaimer p {
@@ -159,7 +162,11 @@ h3 {
     font-weight: bold;
     font-size: 1.2em;
     line-height: 1.8em;
-    font-family: 'Arial, sans-serif';
+}
+
+#disclaimer p {
+    font-style: italic;
+    font-size: 1em;
 }
 
 #signup a, #contact a, #disclaimer a {
@@ -172,36 +179,7 @@ h3 {
     color: #00B598;
 }
 
-#disclaimer p {
-    font-style: italic;
-    font-size: 1em;
-}
-
 /** END Footer **/
-
-
-
-
-
-/** Home Page **/
-
-#results-content {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#last-season-winners{
-    font-size: 1.5em;
-    color: #00B598;
-    line-height: 2;
-}
-
-/** End Home Page **/
-
-
-
 
 
 
@@ -212,19 +190,23 @@ h3 {
 }
 
 #rules-content p {
-    font-family: 'Arial, sans-serif';
     font-weight: bold;
     font-size: 1.3em;
 }
 
 li {
-    font-family: 'Arial, sans-serif';
     font-weight: bold;
     font-size: 1.3em;
 }
 
 #rules-example {
     font-style: italic;
+}
+
+#rules-note {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.3em;
 }
 
 /** End Rules Page **/
@@ -236,10 +218,10 @@ li {
 #signup-content span {
     font-style: italic;
     font-size: 1.5em;
+    font-family: 'ROG Fonts';
 }
 
 #signup-content p {
-    font-family: 'Arial, sans-serif';
     font-weight: bold;
     font-size: 1.3em;
 }
@@ -288,3 +270,34 @@ li {
 
 /** End Signup Page **/
 
+
+/** Previous Page **/
+
+#results-content {
+    font-family: 'ROG Fonts';
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#last-season-winners{
+    font-size: 1.5em;
+    color: #00B598;
+    line-height: 2;
+}
+
+/** End Previous Page **/
+
+
+/** SuperBowl Page **/
+
+#superbowl-head-img {
+    background: url('../assets/superbowl_sm.png') no-repeat;
+    background-position: center;
+    width: 100%;
+    width: 400px;
+    height: 225px;
+}
+
+/** End SuperBowl Page **/
