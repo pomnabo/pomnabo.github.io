@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intitial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="assets/ROGFonts-Regular.otf" type="text/css">
+
+        <title>La Costa Pick'em Pool</title>
+
+</head>
+
+<body>
+
+    <header><!-- Header -->
+        <nav id="header-nav" class="navbar navbar-default">
+            <a href="index.html" alt="homepage">
+                <div class="jumbotron">
+                    <img src="assets/23-24FBBGcropped.png" alt="Image of football players at sunset." class="img-responsive">
+                </div>
+            </a>
+
+            <div class="container-fluid text-center">
+                <div class="navbar-header">
+                  <!-- This button will appear on small screens only/mobile devices -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>                    
+                </div>
+
+                <div id="collapsable-nav" class="collapse navbar-collapse text-center"> <!-- Collapsable Navigation -->
+                    <ul id="nav-list" class="nav navbar-nav">
+
+                        <li class="navbar-btn">
+                            <a href="index.html">
+                                Home/Results
+                            </a>
+                        </li>
+                        
+                        <li class="navbar-btn">
+                            <a href="rules.html">
+                                Rules
+                            </a>
+                        </li>
+
+                        <li class="navbar-btn">
+                            <a href="signup.html">
+                                Sign-Up/FAQ
+                            </a>
+                          </li>
+
+                        <li class="navbar-btn">
+                            <a href="previous.html">
+                                Previous Weeks
+                            </a>
+                        </li>
+
+                        <li class="navbar-btn">
+                            <a href="superbowl.html">
+                                SuperBowl Squares
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header><!-- End of header -->
+
+<!----------------------------------------------------------- Main Content ------------------------------------------------------------------>
+<div id="rules-content" class="container">
+    <img src="assets/rules.jpg" alt="Description of the image" width="300" height="200">   
+    
+      <h2>La Costa Pro Pick 'Em Pool Rules</h2>
+      <br>
+
+        <h3>
+            Objective:
+        </h3>
+        <p>        
+            The objective of the "La Costa Pro Pick 'Em Pool" is to accurately predict the winners of NFL games each week throughout the season.
+        </p>
+
+        <h3>
+            Participants:
+        </h3>
+        <p>
+            Participants will make their weekly picks on Yahoo's Pro Pick 'Em platform, either on the website or the Yahoo Fantasy app.
+        </p>
+
+        <h3>
+            Picking Games:
+        </h3>
+        <ul>
+            <li>
+                Each week, participants will select the team they believe will win each NFL game. Picks must be submitted 5 minutes before the scheduled kickoff time of each game.
+            </li>
+            <li>
+                Picks are made "straight up," meaning participants choose the team they expect to win without considering point spreads.
+            </li>
+            <li>
+                It is the participant's responsibility to ensure their picks are submitted on time. Late picks will not be accepted and will be graded as a loss.
+            </li>
+        </ul>
+
+        <h3>
+            Scoring:
+        </h3>
+        <ul>
+            <li>Participants will earn 1 point/win for each correct pick.Ties and losses will earn 0 points.</li>
+        </ul>
+  
+        <h3>
+            Tiebreaker rules:
+        </h3>
+        <p>
+            In case of a tie in points/wins at the end of the week, the tiebreaker will be determined by Yahoo’s tiebreaker rules:
+      
+        <ul>
+            <li>Closest to the total points for the first Tiebreak Game.</li>
+            <li>Closest to the home team points for the first Tiebreak Game.</li>
+            <li>Closest to the road team points for the first Tiebreak Game.</li>
+            <li>Closest to the total points for the second Tiebreak Game.</li>
+            <li>Closest to the home team points for the second Tiebreak Game.</li>
+            <li>Closest to the road team points for the second Tiebreak Game.</li>
+            <li>Closest to the team whose team scores the most points.</li>
+            <li>Closest to the team whose team scores the least points.</li>
+            <li>Whichever player had more points in the previous week (or the week before that if still tied, etc.).</li>
+        </ul>
+        </p>        
+        <p id="rules-example">
+            Example: Player A and Player B are tied with the most wins after all games are played for that week. The first Tiebreak Game had them guess the points for the Monday Night Football Game (Buffalo Bills @ NY Jets).
+            <br>
+            The final score in the game is:
+            <br>
+            Buffalo 27<br>
+            NY Jets 14<br>
+        </p>
+        <p>
+            Player A’s tiebreaker points guess was:<br>
+            Buffalo 21<br>
+            NY Jets 10<br>
+        </p>
+        <p>
+            Player B’s tiebreaker points guess was:<br>
+            Buffalo 35<br>
+            NY Jets 14<br>
+        </p>
+        <p>
+        The TOTAL points scored in the actual game was 41 (27+14). Player A’s total points guess was 31 (21+10). Player B’s total points guess was 49 (35+14). In this example, Player B would be the winner since their guess of 49 points is closer to 41, than Player A who guessed 31.
+        </p>
+    
+  
+      <h2>
+        Weekly Prizes:
+      </h2>
+      <ul>
+        <li>
+            Prizes for weekly winners will be determined based on the amount of entries for that week. Prizes will be distributed every Tuesday.</li>
+            <br>
+            <p>
+                Example: 50 entries
+                <ul>
+                    <li>$250 pot</li>
+                    <li>1st place prize: $225</li>
+                    <li>2nd place prize: $20</li>
+                  </ul>
+            </p>
+        
+        <li>Commissioner takes $5 out of the pot each week to help cover the cost of web hosting and all the time and effort running the pool.</li>
+      </ul>
+
+      <h3 id="side-bet">
+        The “Side Bet” & Rules:
+      </h3>  
+        <p>
+        The Side Bet is an optional $20 additional buy-in collected before the season starts. The Side Bet rewards consistency over the course of the season, with the Grand Prize being rewarded to the player with the most “wins” at the end of the year. And starting this year, 2nd and 3rd place will also be paid out.
+        </p>
+
+        <h3>
+            Quarterly Prizes:
+        </h3>
+        <p>
+            4 prizes will be rewarded for the most wins for each quarter of the season. After each quarter, everyone “resets” and starts with 0 to begin the next quarter. (Week 1-4, Weeks 5-9, Weeks 10-13, and Weeks 14-18).
+        </p>
+
+        <h3>            
+            Prizes for previous 22-23 Season:
+        </h3>
+        <p>            
+            <ul>
+                <li>55 people entered the $20 side bet, which put the pot at an even $1,100.</li>
+                <li>Week 1, 2, 3, 4 most combined overall wins = $75</li>
+                <li>Week 5, 6, 7, 8, 9 most combined overall wins = $100</li>
+                <li>Week 10, 11, 12, 13 most combined overall wins = $75</li>
+                <li>Week 14, 15, 16, 17, 18 most combined overall wins = $100</li>
+                <li>Week 1 thru 18 most combined overall wins = $750</li>
+            </ul>
+        </p>
+
+        <h3>
+            Prizes for current season:
+        </h3>
+        <p>
+            Prize amounts are undetermined until the season begins. The more people that sign up, the more money there is to be won!<br>
+        </p>
+
+        <h3>
+            Tie-breaker Rules for Quarterly Prizes:
+        </h3>
+        <p>
+            In case of a tie in points/wins at the end of each Quarter, the tiebreaker will be determined by Yahoo’s Weekly tiebreaker rules.
+        </p>
+
+        <h3>
+            Tie-breaker Rules for Season Prizes:
+        </h3>
+        <p>
+            In case of a tie in points/wins at the end of the season, the tiebreaker will be determined by Yahoo’s Season tiebreaker rules. Ties at the end of the regular season or playoffs are broken by:
+            <br>
+            <ul>
+                <li>Previous week's points/wins.</li>
+                <li>Each previous week's fantasy points until the tie is broken.</li>
+            </ul>
+        </p>
+        <p>
+            If 2 or more people are tied for the most wins at the end of the season, this means that the winner is whoever had the most wins the most recent week.
+        </p>
+        <p id="rules-example">
+            Example: Player A, B, and C are all tied with 173 points/wins at the end of the regular season. In Week 18 (Final week), Player A had 12 wins, Player B had 12 wins, Player C had 11 wins. In Week 17, Player A had 10 wins while Player B had 11 wins.
+            <br>
+            The Final Standings would be:<br>
+            1st place: Player B<br>
+            2nd place: Player A<br>
+            >3rd place: Player C<br>
+            <br>
+        <a href=https://help.yahoo.com/kb/SLN6629.html>Rules are taken directly from the Yahoo Website</a>
+  
+        <h2>
+            Tips and general info:
+        </h2>
+            <ul>
+                <li>If you find yourself in a tie for the win with multiple people going into the Monday Night Football game, it's way more fun to watch when you know what to cheer for when it comes to the tie-breaker points everyone has chosen. You might want a high-scoring game or a low-scoring game depending on how many points you’ve guessed versus what your opposition guessed. Unfortunately, the Yahoo app doesn't allow you to view tie-breakers.
+                <br>
+                <a href="https://football.fantasysports.yahoo.com/pickem/21511">You must log into the website to view tie breakers.</a> From there, you can view everyone’s tie-breaker guesses so you know exactly who and what to cheer for.
+                </li>
+                
+                <span id="rules-note">
+                    Note: Tie-breaker points guesses are not viewable until kick-off. They will appear blank until the game begins.
+                </span>
+
+                <li>
+                    Make all of your picks early in the week. You can always go back and change them if you decide. That way if you forget, you at least have your picks in. If you forget to do them and it's 5 minutes until kick-off, you will be graded as a loss.
+                </li>
+
+                <li>
+                    You can make as many changes to your picks as you want leading up to the game starting. This can lead to some strategy going into the final game of the week, and if you find yourself in the lead, or 1 game back.
+                </li>
+
+                <li>
+                    The Standings page on the Yahoo website and App are updated after every game is final. However, players will not be ranked correctly until 12 AM PST. After that, all players will be ranked correctly. This is especially important on Monday nights. There might be 3+ people all tied for the lead after the game is over, but they might not be in the correct order.
+                    <br>                    
+                </li>
+
+                <span id="rules-note">
+                    For example: Monday night game is over and 3 people are tied, Player A, Player B and Player C. This is reflected on the Standings page right after the game, with Player A ranked above Player B and Player C. At midnight, Player B might be ranked 1st rather than Player A. Yahoo does not “grade” everything until midnight. This is why I wait until Tuesday to post the results and pay the correct winners.
+                </span>    
+            </ul>
+</div>
+<!------------------------------------------------------- End Main Content ------------------------------------------------------------------>
+
+    <footer class="panel-footer"><!-- Footer -->
+        <div class="container">
+            <div class="row">
+
+                <section id="signup" class="col-sm-4">
+                    <span id="entry-cost" width="100%">Want to play?</span><br>
+                    <p>
+                        First, read the <a href="rules.html" alt="rules of how to play">rules</a>.
+                    </p>
+                    <p>
+                      Go <a href="signup.html" alt="sign-up information and FAQ">here</a> for full entry details!
+                    </p>                    
+                    <hr class="visible-xs">
+                </section>
+
+                <section id="contact" class="col-sm-4">
+                    <span>Questions?</span><br>
+                    <p>
+                        Send an email to: <a href="mail:chris@lacostapool.com">chris@lacostapool.com</a>
+                    </p>
+                    <hr class="visible-xs">
+                </section>  
+
+                <section id="disclaimer" class="col-sm-4">                        
+                    <span>Disclaimer:</span><br>
+                    <p>
+                        "La Costa Pro Pick 'Em Pool" is not affiliated with the NFL, Yahoo, or any other organization. It is an independent fan-based competition.
+                    </p>
+                    <hr class="visible-xs">
+                </section>                                   
+                  
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
