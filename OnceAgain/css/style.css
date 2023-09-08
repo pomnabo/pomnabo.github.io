@@ -1,0 +1,302 @@
+/**Color Codes: #00B598(cyan) #D60F42(magenta) #F0C358(yellow) #D30600(red) #444444(grey) #f0f0f0(white) #1D1114(black) **/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'ROG Fonts';
+    src: url('../assets/ROGFonts-Regular.otf') format('opentype');
+}
+
+body {
+    font-family: 'ROG Fonts,' Arial, sans-serif;
+    background-color: #f0f0f0;
+    color:#1D1114;
+}
+
+a {
+    text-decoration: none;
+    color: #D60F42;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #00B598;
+}
+
+
+#main-content p {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-family: 'ROG Fonts';
+    font-size: 2em;
+    color: #D60F42;
+    line-height: 2;
+    text-align: center; 
+}
+
+h3 {
+    font-family: 'ROG Fonts';
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+/** Header **/
+
+#header-nav {
+    background-color: #1D1114;
+    border-radius: 0;
+    border: 0;
+}
+
+#nav-list {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#nav-list a {
+    font-family: 'ROG Fonts';
+    font-size: 1.3em;
+    color: #1D1114;
+    border-radius: 5px;
+    background: #F0C358;
+    padding: 16px 32px;
+    margin-top: 15px;
+    margin-bottom: 15px; 
+}
+
+#nav-list a:hover {
+    color: #f0f0f0;
+    background: #00B598;
+    transition: .3s;
+}
+
+.navbar-btn {
+    margin: 10px;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+  
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 2px solid #f0f0f0;
+    background-color: #D60F42;
+    width: 15%;
+    float: none;
+}
+
+.navbar-toggle .icon-bar {
+    width: 100%;
+}
+
+.navbar-header button.navbar-toggle:hover {
+    background-color: #00B598;
+    transition: .3s;
+}
+
+.navbar-header button.navbar-toggle:focus {
+    background-color: #00B598;
+    transition: .3s;
+}
+
+.navbar-header button.navbar-toggle:active {
+    background-color: #D60F42;
+    transition: .3s;
+}
+
+.jumbotron {
+    margin: 0px;
+    padding: 0px;
+    background-color: #1D1114;
+}
+
+/** End Header **/
+
+
+
+/** Footer **/
+
+.panel-footer {
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #1D1114;
+    border-top: 0px;
+}
+
+.panel-footer div.row {
+    margin-bottom: 35px;
+}
+
+#signup, #contact, #disclaimer {
+    line-height: 2;
+    color: #f0f0f0;
+}
+
+#signup > span, #contact > span, #disclaimer > span {
+    color: #D60F42;
+    font-size: 1.5em;
+    font-family: 'ROG Fonts';
+}
+
+#signup p, #contact p, #disclaimer p {
+    color: #f0f0f0;
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+
+#disclaimer p {
+    font-style: italic;
+    font-size: 1em;
+}
+
+#signup a, #contact a, #disclaimer a {
+    text-decoration: none;
+    color: #F0C358;
+}
+
+#signup a:hover, #contact a:hover, #disclaimer a:hover {
+    text-decoration: none;
+    color: #00B598;
+}
+
+/** END Footer **/
+
+
+
+/** Rules Page **/
+
+#rules-content h3 {
+    font-size: 1.5em;
+}
+
+#rules-content p {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+li {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+#rules-example {
+    font-style: italic;
+}
+
+#rules-note {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+/** End Rules Page **/
+
+
+
+/** Signup Page **/
+
+#signup-content span {
+    font-style: italic;
+    font-size: 1.5em;
+    font-family: 'ROG Fonts';
+}
+
+#signup-content p {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+#how-to-join {
+    color: #00B598;
+}
+
+#payment-details span {
+    width: 100%;
+    text-align: center;
+    font-style: normal;
+    color: #1D1114;
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: #F0C358;
+    border-radius: 5px;
+}
+
+#venmo-tile, #paypal-tile, #cashapp-tile {
+    height: 220px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: none;
+    overflow: hidden;
+}
+
+#venmo-tile {
+    background: url('../assets/venmo_sm.png') no-repeat;
+    background-position: center;
+}
+
+#paypal-tile {
+    background: url('../assets/paypal_sm.png') no-repeat;
+    background-position: center;
+}
+
+#cashapp-tile {
+    background: url('../assets/cashapp_sm.png') no-repeat;
+    background-position: center;
+}
+
+
+/** End Signup Page **/
+
+
+/** Previous Page **/
+
+#results-content {
+    font-family: 'ROG Fonts';
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#last-season-winners{
+    font-size: 1.5em;
+    color: #00B598;
+    line-height: 2;
+}
+
+/** End Previous Page **/
+
+
+/** SuperBowl Page **/
+
+#superbowl-head-img {
+    background: url('../assets/superbowl_sm.png') no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 225px;
+}
+
+/** End SuperBowl Page **/
