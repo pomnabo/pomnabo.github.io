@@ -27,12 +27,6 @@ a:hover {
     color: #00B598;
 }
 
-
-#main-content p {
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
 #main-content span {
     font-weight: bold;
     font-size: 1.5em;
@@ -58,7 +52,7 @@ h3 {
     line-height: 1.5em;
 }
 
-#season-winners{
+#season-winners {
     font-family: 'ROG Fonts';
     font-size: 1.5em;
     color: #00B598;
@@ -193,8 +187,15 @@ h3 {
 
 /** END Footer **/
 
+/** Home Page **/
+
+#side-bets p {
+    font-weight: bold;
+    font-size: 1.5em;
+}
 
 
+/** END Home Page **/
 
 
 /** Rules Page **/
