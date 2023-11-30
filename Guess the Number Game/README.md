@@ -1,3 +1,5 @@
+https://pomnabo.github.io/Guess%20the%20Number%20Game/
+
 This is my first forray into learning Javascript.
 
 The assignment is to create a "guess the number" game.
