@@ -1,4 +1,4 @@
-https://pomnabo.github.io/Guess%20the%20Number%20Game/
+https://pomnabo.github.io/Javascript%20Practice/Guess%20the%20Number%20Game/
 
 This is my first forray into learning Javascript. I was having trouble with the Javascript section of my Coursera course, so I looked to alternatives to learn. I tried The Odin Project, but there was too much introductory material before their Javascript information, so I went to MDN web docs section on Javascript for a more isolated approach.
 
