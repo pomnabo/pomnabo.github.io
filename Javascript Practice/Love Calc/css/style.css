@@ -17,21 +17,73 @@
 }
 
 
-html {
-font-family: sans-serif;
-color: #FFBE98;
-}
-
 body {
-width: 50%;
-max-width: 800px;
-min-width: 480px;
+font-family: 'Open Sans';
+height: 100vh;
+width: 100vh;
 margin: 0 auto;
-background: rgb(139,222,213);
-background: radial-gradient(circle, rgba(139,222,213,1) 0%, rgba(37,16,52,1) 100%); 
+display: flex;
+justify-content: center;
+align-items: center;
+color: #FFBE98;
+background: rgba(37,16,52,1);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(37,16,52,1) 100%); 
 }
 
-h2 (
+.container{
+  width: 500px;
+  background-color: #251034;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+  border: 25px solid #8BDED5;
+  text-align: center;
+}
+
+
+h2 {
 font-family: 'Aladin';
-font-size: '1em';
-)      
+font-size: 2.5em;
+color: #8BDED5;
+margin-bottom: 30px;
+}
+
+.love-calculator{
+  margin-top: 20px;
+}
+
+label{
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Open Sans SemiBold';
+  font-size: 1.2em;
+}
+
+input[type="text"]{
+  width: 75%;
+  padding: 10px;
+  margin-top: 10px;
+  color:#8BDED5;
+  background-color: #251034;
+  color: #8BDED5;
+}
+
+button{
+  background-color: #8BDED5;
+  color: #251034;
+  border: none;
+  padding: 10px 30px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-family: 'Aladin';
+  font-size: 1.7em;
+  cursor: pointer;
+}
+
+#result{
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-family: 'Open Sans SemiBold';
+  color: #8BDED5;
+}
