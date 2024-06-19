@@ -4,15 +4,33 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>WEBSITE TITLE</title>
+<title>Starsign Love Calculator</title>
 
 <link rel="stylesheet" href="css/style.css" type="text/css">
-<script> defer src="js/script.js"></script>
+<script defer src="js/script.js"></script>
 
 </head>
 
 <body>
 
+    <div class="container">
+        <h2>Are You Both Compatible?</h2>
+            <div class="love-calculator">
+                <label for="starsign-self">Your Starsign</label>
+                <input type="text" id="starsign-self" placeholder="Put your starsign here.">
+            </div>
+
+            <div class="love-calculator">
+                <label for="starsign-partner">Partner's Starsign</label>
+                <input type="text" id="starsign-partner" placeholder="Put your parther's starsign here.">
+            </div>
+
+            <button onclick="calculateLove()">Let's see!</button>
+
+            <div id="result">Compatability Level</div>
+
+
+    </div>
 
 
 </body>

@@ -1,18 +1,37 @@
+/* color pallette:
+#FFBE98 Pantone 2024 Color of the Year "Peach Fuzz"
+#251034 Analagous ("Dark Eggplant")
+#8BDED5 Analagous ("Aquamarine")
+*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-      html {
-        font-family: sans-serif;
-        color: #999999;
-      }
+@font-face {
+  font-family: 'Aladin';
+  src: url('../assets/fonts/Aladin-Regular/Aladin-Regular.ttf') format('truetype');
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-Regular/OpenSans-Regular.ttf') format('truetype');
+}
 
-      body {
-        width: 50%;
-        max-width: 800px;
-        min-width: 480px;
-        margin: 0 auto;
-        background-color: #222222;
-      }
+
+html {
+font-family: sans-serif;
+color: #FFBE98;
+}
+
+body {
+width: 50%;
+max-width: 800px;
+min-width: 480px;
+margin: 0 auto;
+background: rgb(139,222,213);
+background: radial-gradient(circle, rgba(139,222,213,1) 0%, rgba(37,16,52,1) 100%); 
+}
+
+h2 (
+font-family: 'Aladin';
+font-size: '1em';
+)      
