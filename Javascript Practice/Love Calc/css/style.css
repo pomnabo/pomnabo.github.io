@@ -17,6 +17,8 @@
 }
 
 
+/* main content */
+
 body {
 font-family: 'Open Sans';
 height: 100vh;
@@ -86,4 +88,24 @@ button{
   font-size: 1.2em;
   font-family: 'Open Sans SemiBold';
   color: #8BDED5;
+}
+
+/*
+.fancy-alert span {
+  cursor: pointer;
+}
+*/
+
+/* starry sky effect */
+
+#starry-sky{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 3px;
+  width: 3px;
+  background-color: #E0C9F1;
+  border-radius: 50%;
+  box-shadow: 30px 50px 3px 1px #E0C9F1, 20vw 12vh 1px 1px #E0C9F1,-3vw -34vh 1px 0px #E0C9F1,37vw -7vh 2px 0px #E0C9F1,-14vw 19vh 1px 3px #E0C9F1,39vw 23vh 1px 3px #E0C9F1,-9vw 30vh 0px 1px #E0C9F1,-30vw 13vh 2px 2px #E0C9F1,34vw -1vh 0px 0px #E0C9F1,-15vw -14vh 2px 1px #E0C9F1,-35vw 36vh 2px 1px #E0C9F1,-29vw -1vh 1px 3px #E0C9F1,-16vw -38vh 2px 0px #E0C9F1,-32vw 40vh 2px 1px #E0C9F1,46vw 27vh 0px 2px #E0C9F1,-41vw -42vh 0px 2px #E0C9F1,49vw -38vh 2px 3px #E0C9F1,31vw 37vh 1px 0px #E0C9F1,-32vw 10vh 1px 3px #E0C9F1,-22vw 14vh 2px 2px #E0C9F1,19vw -1vh 0px 2px #E0C9F1,4vw -17vh 2px 0px #E0C9F1,24vw -44vh 2px 3px #E0C9F1,-7vw 5vh 2px 0px #E0C9F1,-24vw 12vh 0px 1px #E0C9F1,-26vw 42vh 0px 3px #E0C9F1,34vw -27vh 3px 1px #E0C9F1,-18vw -40vh 2px 2px #E0C9F1,-39vw 36vh 1px 2px #E0C9F1,-6vw 13vh 1px 1px #E0C9F1,31vw -21vh 0px 0px #E0C9F1,-7vw 13vh 0px 2px #E0C9F1,-15vw 43vh 3px 1px #E0C9F1,17vw -24vh 2px 2px #E0C9F1,-24vw 49vh 1px 1px #E0C9F1,14vw 13vh 2px 1px #E0C9F1,35vw -18vh 1px 3px #E0C9F1,-35vw 14vh 0px 1px #E0C9F1,-13vw -22vh 2px 1px #E0C9F1,14vw 40vh 3px 1px #E0C9F1,-22vw 4vh 3px 3px #E0C9F1,3vw 38vh 1px 2px #E0C9F1,-3vw -47vh 3px 2px #E0C9F1,-39vw -26vh 1px 1px #E0C9F1,-49vw 1vh 0px 2px #E0C9F1,-10vw -39vh 1px 3px #E0C9F1,46vw 16vh 0px 1px #E0C9F1,31vw -4vh 0px 3px #E0C9F1,-13vw 12vh 0px 3px #E0C9F1,-8vw -31vh 2px 2px #E0C9F1,-16vw 6vh 3px 3px #E0C9F1,20vw 2vh 2px 1px #E0C9F1,-43vw -50vh 3px 0px #E0C9F1,19vw -17vh 1px 1px #E0C9F1,-46vw 39vh 3px 1px #E0C9F1,4vw 22vh 0px 3px #E0C9F1,45vw -10vh 0px 1px #E0C9F1,-5vw -43vh 1px 0px #E0C9F1,-30vw -28vh 3px 3px #E0C9F1,-5vw -7vh 0px 1px #E0C9F1,-29vw -21vh 1px 0px #E0C9F1,0vw -3vh 0px 2px #E0C9F1,-19vw 43vh 2px 0px #E0C9F1,50vw 0vh 0px 3px #E0C9F1,-1vw -7vh 3px 0px #E0C9F1,18vw -3vh 2px 1px #E0C9F1,41vw 17vh 3px 2px #E0C9F1,-42vw 23vh 1px 1px #E0C9F1,31vw -49vh 0px 2px #E0C9F1,44vw 10vh 3px 1px #E0C9F1,1vw -41vh 2px 0px #E0C9F1,-18vw 6vh 2px 0px #E0C9F1,-43vw -49vh 1px 1px #E0C9F1,41vw 3vh 0px 3px #E0C9F1,11vw -11vh 1px 2px #E0C9F1,5vw -20vh 0px 0px #E0C9F1,-20vw -47vh 3px 2px #E0C9F1,37vw 40vh 3px 2px #E0C9F1,0vw -23vh 1px 2px #E0C9F1,-24vw -19vh 3px 3px #E0C9F1,-27vw -25vh 3px 3px #E0C9F1,24vw -29vh 1px 0px #E0C9F1,-22vw -27vh 2px 2px #E0C9F1,-15vw 50vh 1px 0px #E0C9F1,-13vw -3vh 0px 1px #E0C9F1,2vw -13vh 0px 0px #E0C9F1,50vw -30vh 1px 3px #E0C9F1,8vw 14vh 3px 3px #E0C9F1,-27vw 17vh 2px 3px #E0C9F1,31vw -34vh 0px 3px #E0C9F1,15vw 40vh 2px 3px #E0C9F1,16vw 45vh 1px 1px #E0C9F1,-41vw 22vh 3px 3px #E0C9F1,-3vw 39vh 0px 1px #E0C9F1,39vw -35vh 2px 3px #E0C9F1,-7vw -1vh 1px 1px #E0C9F1,-46vw -7vh 0px 1px #E0C9F1,0vw 32vh 1px 1px #E0C9F1,-20vw 21vh 3px 0px #E0C9F1,8vw 47vh 3px 3px #E0C9F1,42vw 12vh 3px 2px #E0C9F1;
+
 }
