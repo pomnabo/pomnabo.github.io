@@ -9,7 +9,9 @@ This is 2 of 10 small javascript project tutorials featured in Vijay Kumar's Ude
 ------------------------------
 Coding Challenges:
 
+I had no challenges really with this exercise. The only hang up was when I tried adding two fonts; I've never done that before, and didn't recall learning that each font would need its own @font-face line in the stylesheet. Once added, the page ran as intended.
 
+Overall, I feel I understood what the tutorial was doing as we went along, but I am still not confident that I could think to do any of this on my own yet. Hopefully after another 60 of these projects I'll have a better grasp of things!
 
 ------------------------------
 Other Challenges:
@@ -19,6 +21,10 @@ Almost immediately, I realized the gender dicotomy was something I wanted to cus
 I know that this doesn't quite suffice, but I am also not an expert when it comes to measuring an individual's health based on these factors, and don't have the resources to produce a better selection for such a meager project. Ultimately, this project is not meant to be this extensive, and I do not want to misinform anyone either.
 
 If you have information that you feel would provide a more in-depth explanation of this measurement and how it intersects with non-binary gender indentity and trans people, I would love to hear from you! Please send me an email with any pertinent information to contact@pomnabo.com.
+
+
+
+Not as much of a challenge, but upon checking the completion of the javascript, I found the calculation to be inaccurate; so I changed the equation to account for this.
 
 ------------------------------
 Additional Notes:

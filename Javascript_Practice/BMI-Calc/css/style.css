@@ -41,16 +41,17 @@ Secondary Font: Arial
       }
 
       .container{
-        max-width: 60%;
+        max-width: 75%;
         margin: 200px auto;
-        padding: 20px;
+        padding: 35px;
         background-color: #494C4C;
-        border: 10px solid #F2FF81;
+        border: 20px solid #F2FF81;
         border-radius: 5px;
         box-shadow: 5px 10px 10px rgba(242, 255, 129, 0.2);
       }
 
       h2{
+        margin-top: 0px;
         font-family: 'Quicksilver';
         font-size: 2em;
         text-align: center;
@@ -72,4 +73,63 @@ Secondary Font: Arial
       form{
         font-family: 'GFS Neohellenic';
         font-size: 1.4em;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      label{
+        font-family: 'Quicksilver';
+        font-size: 0.8em;
+        margin-top: 15px;
+        margin-bottom: 5px;
+      }
+
+      input[type="number"],
+      select{
+        font-family: 'GFS Neohellenic';
+        font-size: 0.8em;
+        color: #F2FF81;
+        width: 95%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        background-color: #1A1426;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba(242, 255, 129, 0.2);
+      }
+
+      input[type="number"]:focus,
+      select:focus{
+        outline: none;
+        box-shadow: 0px 0px 5px #F2FF81;
+      }
+
+      select{
+        width: 95%;
+      }
+
+      input[type="submit"]{
+        font-family: 'Quicksilver';
+        font-size: 1.2em;
+        color: #1A1426;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: #F2FF81;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background-color .0s ease;
+      }
+
+      input[type="submit"]:hover{
+        background-color: #1A1426;
+        color: #F2FF81;
+      }
+
+      #results{
+        font-family: 'Quicksilver';
+        font-size: 1.5em;
+        text-align: center;
+        margin-top: 35px;
       }
