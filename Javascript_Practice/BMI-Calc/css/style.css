@@ -18,8 +18,14 @@ Secondary Font: Arial
 
 @font-face {
   font-family: 'Quicksilver';
-  src: url('../assets/fonts/Quicksilver\ Italic.otf') format('opentype');
+  src: url('../assets/fonts/Quicksilver\ Italic.otf') format('opentype');  
 }
+
+@font-face {
+  font-family: 'GFS Neohellenic';
+  src: url('../assets/fonts/GFSNeohellenic-Regular.ttf') format('truetype');
+}
+
 
       html {
         font-family: sans-serif;
@@ -31,12 +37,39 @@ Secondary Font: Arial
         max-width: 800px;
         min-width: 480px;
         margin: 0 auto;
-        background-color: #1A1426;
+        background-color: #1A1426;               
       }
 
       .container{
-        max-width: 65%;
+        max-width: 60%;
         margin: 200px auto;
         padding: 20px;
         background-color: #494C4C;
+        border: 10px solid #F2FF81;
+        border-radius: 5px;
+        box-shadow: 5px 10px 10px rgba(242, 255, 129, 0.2);
+      }
+
+      h2{
+        font-family: 'Quicksilver';
+        font-size: 2em;
+        text-align: center;
+      }
+
+      
+      #description{
+        font-family: 'GFS Neohellenic';
+        font-size: 1.5em;
+        text-align: center;
+      }
+
+      #disclaimer{
+        font-family: 'GFS Neohellenic';
+        font-size: 1.2em;
+        font-style: italic;
+      }
+
+      form{
+        font-family: 'GFS Neohellenic';
+        font-size: 1.4em;
       }

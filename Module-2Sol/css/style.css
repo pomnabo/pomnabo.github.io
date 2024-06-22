@@ -50,6 +50,7 @@ body {
     margin-bottom: 20px;
     margin-right: auto;
     margin-left: auto; 
+    display: block;
 }
 
 .footer {
