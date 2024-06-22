@@ -1,7 +1,7 @@
 /*
 Color Pallette: Wanting something that's "edgy, dynamic, and modern."
-#F2F76F = neon yellow
-#6B6F70 = cobalt grey
+#F2FF81 = neon yellow
+#494C4C = cobalt grey
 #1A1426 = deep dark plum
 
 Branding Font: Quicksilver Italic
@@ -23,7 +23,7 @@ Secondary Font: Arial
 
       html {
         font-family: sans-serif;
-        color: #F2F76F;
+        color: #F2FF81;
       }
 
       body {
@@ -38,5 +38,5 @@ Secondary Font: Arial
         max-width: 65%;
         margin: 200px auto;
         padding: 20px;
-        background-color: #6B6F70;
+        background-color: #494C4C;
       }
