@@ -1,4 +1,4 @@
-https://pomnabo.github.io/URLHERE/
+https://pomnabo.github.io/Javascript%20Practice/BMI-Calc/
 
 
 PROJECT: BMI Calculator
