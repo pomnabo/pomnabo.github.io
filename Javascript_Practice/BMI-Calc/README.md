@@ -19,3 +19,8 @@ Almost immediately, I realized the gender dicotomy was something I wanted to cus
 I know that this doesn't quite suffice, but I am also not an expert when it comes to measuring an individual's health based on these factors, and don't have the resources to produce a better selection for such a meager project. Ultimately, this project is not meant to be this extensive, and I do not want to misinform anyone either.
 
 If you have information that you feel would provide a more in-depth explanation of this measurement and how it intersects with non-binary gender indentity and trans people, I would love to hear from you! Please send me an email with any pertinent information to contact@pomnabo.com.
+
+------------------------------
+Additional Notes:
+
+To enable a more accessible internet experience, I decided to start running my projects through a colorblindness filter site to ensure the color schemes I choose are accessible to everyone. If I find the time, and feel inclinded, I would like to update previous projects with more accessible color schemes.
