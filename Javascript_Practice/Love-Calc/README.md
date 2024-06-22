@@ -1,4 +1,4 @@
-https://pomnabo.github.io/Javascript%20Practice/Love%20Calc/
+https://pomnabo.github.io/Javascript_Practice/Love-Calc/
 
 ------------------------------
 Overview:

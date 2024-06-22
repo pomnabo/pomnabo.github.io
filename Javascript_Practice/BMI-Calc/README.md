@@ -1,17 +1,17 @@
-https://pomnabo.github.io/Javascript%20Practice/BMI-Calc/
+https://pomnabo.github.io/Javascript_Practice/BMI-Calc/
 
-
+------------------------------
 PROJECT: BMI Calculator
 Overview:
 
 This is 2 of 10 small javascript project tutorials featured in Vijay Kumar's Udemy course.
 
-
+------------------------------
 Coding Challenges:
 
 
 
-
+------------------------------
 Other Challenges:
 
 Almost immediately, I realized the gender dicotomy was something I wanted to customize for my own project; to be more inclusive of other genders. After a quick google search, and some reading, I concluded that for this project, it would be difficult to accurately account for gender variation overall, and most especially the trans community. It's also highly debated whether or not BMI is a useful calculation when it comes to health and wellness, based on more recent research over the last decade. I concluded to simply add a short disclaimer about the gender dropdown selection, to advise users to select the gender that is closest to their dominant hormones.
