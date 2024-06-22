@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>How to Calculate Your BMI</title>
+
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<script defer src="js/script.js"></script>
+<!-- Use "defer" when adding javascript files so that the javascript loads after the rest of the page has loaded first -->
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Calculating Your BMI</h2>
+        
+        <form id="bmiForm">
+
+            <label for="gender">What's your gender identity?</label>
+            <select id="gender" required>
+                <option value="man">Man</option>
+                <option value="woman">Woman</option>
+            </select>
+
+            <label for="age">How old are you?</label>
+            <input type="number" id="age" placeholder="Type your age here." required>
+
+            <label for="height-feet">How tall are you?</label>
+            <input type="number" id="height-feet" placeholder="Feet" required>
+            <input type="number" id="height-inches" placeholder="Inches" required>
+
+            <label for="weight">How much do you weigh?</label>
+            <input type="number" id="weight" placeholder="Type your weight in pounds(lbs) here." required>
+
+            <input type="submit" value="Calculate BMI">
+
+        </form>
+
+        <div id="results">Your BMI:</div>
+
+        
+
+    </div>
+
+
+</body>
+</html>
