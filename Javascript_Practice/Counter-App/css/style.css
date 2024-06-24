@@ -6,24 +6,21 @@
 
 /* You need to use a @font-face selector for each font you wish to apply to your website*/
 @font-face {
-  font-family: 'Aladin';
-  src: url('../assets/fonts/Aladin-Regular/Aladin-Regular.ttf') format('truetype');
+  font-family: 'Amatic SC';
+  src: url('../assets/fonts/AmaticSC-Regular.ttf') format('truetype');
 }
 
 @font-face {  
-  font-family: 'Open Sans';
-  src: url('../assets/fonts/OpenSans-Regular/OpenSans-Regular.ttf') format('truetype');
+  font-family: 'Cabin Sketch';
+  src: url('../assets/fonts/CabinSketch-Regular.ttf') format('truetype');
 }
 
       html {
         font-family: sans-serif;
-        color: #999999;
       }
 
       body {
         width: 50%;
-        max-width: 800px;
-        min-width: 480px;
         margin: 0 auto;
         background-color: #222222;
       }
