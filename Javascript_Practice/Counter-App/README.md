@@ -1,5 +1,4 @@
-https://pomnabo.github.io/URLHERE/
-
+https://pomnabo.github.io/Javascript_Practice/Counter-App/
 
 ------------------------------
 PROJECT: Counter Application
