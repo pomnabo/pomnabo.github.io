@@ -1,0 +1,102 @@
+/*
+Color Pallette: going for trustworthy cerulean blue and deep sea teal.
+
+#1F5ACB = Cerulean Blue
+#C3CEE5 = Light Cobalt Grey
+#293133 = Deep Sea Teal
+*/
+
+
+* { /* Always add this * at the top of the CSS document to reset the browser's margins; this ensures the styling will work as intended. */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+  font-family: 'Marcellus SC';
+  src: url('../assets/fonts/MarcellusSC-Regular.ttf') format('truetype');
+}
+/* For additional fonts, you need another @font-face */
+
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  background-color: #293133;
+}
+
+.container{
+  max-width: 450px;
+  margin: 100px auto;
+}
+
+h2{
+  font-family: 'Marcellus SC';
+  font-size: 2.5em;
+  color: #C3CEE5;
+  text-align: center;
+  background-color: #1F5ACB;
+  border: none;
+  padding: 15px;
+}
+
+.calculator{
+  background-color: #C3CEE5;
+  border: 10px solid #1F5ACB;
+  padding: 0px 45px 20px;
+}
+
+.input-group{
+  margin-bottom: 20px;
+}
+
+.input-group label{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #1F5ACB;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.input-group input{
+  width: 95%;
+  padding: 10px;
+  border: 3px solid #1F5ACB;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  color: #293133;
+  background-color: #C3CEE5;
+}
+
+button{
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Marcellus SC";
+  font-size: 1.5em;
+  color: #C3CEE5;
+  background-color: #1F5ACB;
+  cursor: pointer;
+}
+
+#results{
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #C3CEE5;
+  border: 5px solid #1F5ACB;
+  border-radius: 5px;
+  font-family: "Marcellus SC";
+  font-size: 1.3em;
+  color: #1F5ACB;
+}

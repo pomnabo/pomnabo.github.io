@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Calculating Loan Interest and Monthly Payments</title>
+
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<script defer src="js/script.js"></script>
+<!-- Use "defer" when adding javascript files so that the javascript loads after the rest of the page has loaded first -->
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Loan Calculator</h2>
+
+        <div class="calculator">
+            
+            <div class="input-group">
+                <label>How much is your loan?</label>
+                <input type="number" id="loanAmountInput" placeholder="Type the loan amount here." required>
+            </div>
+            
+            <div class="input-group">
+                <label>Whats the Interest Rate(%)?</label>
+                <input type="number" id="interestRateInput" placeholder="Type the interest rate percentage here." required>
+            </div>
+
+            <div class="input-group">
+                <label>How long is the loan for?</label>
+                <input type="number" id="loanTermInput" placeholder="Type the loan term in months here." required>
+            </div>
+
+            <button id="calculateBtn">Calculate Payments</button>
+            <div id="results">Results</div>
+
+        </div>      
+
+    </div>
+
+
+
+</body>
+</html>
