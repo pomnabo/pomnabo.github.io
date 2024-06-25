@@ -1,4 +1,4 @@
-https://pomnabo.github.io/URLHERE/
+https://pomnabo.github.io/Javascript_Practice/Palindrome-Checker/
 
 ------------------------------
 PROJECT: Palindrome Checker
