@@ -1,3 +1,12 @@
+/*
+Going with a monochromatic teal/green pallette:
+#CFF09E = Soft Chartreuse
+#A8DBA8 = Pastel Sage Green
+#79BD9A = Seafoam Green
+#3B8686 = Teal
+#0B486B = Ocean Blue
+*/
+
 * { /* Always add this * at the top of the CSS document to reset the browser's margins; this ensures the styling will work as intended. */
     box-sizing: border-box;
     margin: 0;
@@ -5,22 +14,97 @@
 }
 
 /* You need to use a @font-face selector for each font you wish to apply to your website*/
-@font-face {
-  font-family: 'Amatic SC';
-  src: url('../assets/fonts/AmaticSC-Regular.ttf') format('truetype');
-}
-
 @font-face {  
   font-family: 'Cabin Sketch';
   src: url('../assets/fonts/CabinSketch-Regular.ttf') format('truetype');
 }
 
-      html {
-        font-family: sans-serif;
-      }
+html {
+  font-family: sans-serif;
+}
 
-      body {
-        width: 50%;
-        margin: 0 auto;
-        background-color: #222222;
-      }
+body {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #0B486B;
+}
+
+h1{
+  background-color: #3B8686;
+  font-family: "Cabin Sketch";
+  font-size: 3em;
+  color: #CFF09E;
+  padding: 20px;
+  width: 300px;
+  margin: 0 auto;
+  box-shadow: 8px 8px rgba(0,0,0,0.2);
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container-card{
+  background-color: #A8DBA8;
+  border: 15px solid #3B8686;
+  width: 300px;
+  margin: 0 auto;
+  box-shadow: 8px 8px rgba(0,0,0,0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.counter-display{
+  font-family: "Cabin Sketch";
+  font-size: 5em;
+  color: #0B486B;
+  text-shadow: 6px 6px rgba(0,0,0,0.2);
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+  
+}
+
+.btn-container{
+  margin-bottom: 20px;
+}
+
+.button-effects{
+  width: 80px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #CFF09E;
+  font-family: "Cabin Sketch";
+  font-size: 3em;
+  color: #0B486B;
+  margin: 0 10px;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+#resetBtn{
+  width: 145px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0B486B;
+  font-family: "Cabin Sketch";
+  font-size: 3em;
+  color: #CFF09E;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 0 20px;  
+  cursor: pointer;
+}
+
+#resetBtn:hover{
+  background-color: #3B8686;
+  color: #CFF09E;
+}
+
+.button-effects:hover{
+  background-color: #0B486B;
+  color: #CFF09E;
+}
