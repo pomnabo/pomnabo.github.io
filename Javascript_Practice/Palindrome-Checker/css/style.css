@@ -1,3 +1,13 @@
+/*
+Color Pallette::
+#A4545F = Rouge
+#784146 = Soft Burgundy
+#BCB4BA = Pastel Lilac
+#362247 = Aubergine
+*/
+
+
+
 * { /* Always add this * at the top of the CSS document to reset the browser's margins; this ensures the styling will work as intended. */
     box-sizing: border-box;
     margin: 0;
@@ -6,24 +16,101 @@
 
 /* You need to use a @font-face selector for each font you wish to apply to your website*/
 @font-face {
-  font-family: 'Aladin';
-  src: url('../assets/fonts/Aladin-Regular/Aladin-Regular.ttf') format('truetype');
+  font-family: 'Amatic SC';
+  src: url('../assets/fonts/AmaticSC-Regular.ttf') format('truetype');
 }
 
-@font-face {  
-  font-family: 'Open Sans';
-  src: url('../assets/fonts/OpenSans-Regular/OpenSans-Regular.ttf') format('truetype');
+html {
+  font-family: sans-serif;
 }
 
-      html {
-        font-family: sans-serif;
-        color: #999999;
-      }
+body {
+  font-family: 'Amatic SC';
+  width: 50%;
+  margin: 0 auto;
+  background-color: #784146;
+}
 
-      body {
-        width: 50%;
-        max-width: 800px;
-        min-width: 480px;
-        margin: 0 auto;
-        background-color: #222222;
-      }
+.container{
+  background-color: #BCB4BA;
+  border: 20px solid #362247;
+  border-radius: 5px;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 6px 8px rgba(0,0,0,0.2);
+}
+
+h1{  
+  font-size: 4em;
+  color: #BCB4BA;
+  background-color: #362247;
+  width: 100%;
+  padding: 15px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+input[type="text"]{
+  font-size: 1.6em;
+  color: #362247;
+  background-color: #BCB4BA;
+  border: none;
+  box-shadow: 0 0 6px rgba(164,84,95,0.5);
+  padding: 10px;  
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+input:focus[type="text"]{
+  outline: none;
+}
+
+button{
+  font-family: 'Amatic SC';
+  font-size: 4em;
+  color: #362247;
+  background-color: #A4545F;
+  width: 80%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+button:hover{
+  color: #BCB4BA;
+  background-color: #362247;
+}
+
+#results{
+  margin-top: 20px;
+  font-size: 3em;
+  color: #362247;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);   
+  }
+
+
+}
+
+.fadeIn{
+  animation: fadeIn 0.5s ease-in-out;
+}
