@@ -2,7 +2,7 @@ https://pomnabo.github.io/Javascript_Practice/Guess-the-Number-Game/
 
 PROJECT: Guess The Number Game
 
-This is my first forray into learning Javascript. I was having trouble with the Javascript section of my Coursera course, so I looked to alternatives to learn. I tried The Odin Project, but there was too much introductory material before their Javascript information, so I went to MDN web docs section on Javascript for a more isolated approach.
+This is my first forray into learning Javascript. I was having trouble with the Javascript section of my Coursera course, so I looked to alternatives to learn. I tried The Odin Project, but there was too much introductory material before their Javascript information, so I went to MDN web docs section on Javascript for a more targeted approach.
 
 I like the way MDN introduces this language, so I may continue their learning guide for the time being; or I may jump between these three. My goal is to complete the Coursera course before moving on to other courses.
 

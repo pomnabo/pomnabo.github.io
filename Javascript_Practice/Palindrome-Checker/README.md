@@ -5,7 +5,7 @@ PROJECT: Palindrome Checker
 
 Overview:
 
-This is 5 of 10 small javascript project tutorials featured in Vijay Kumar's Udemy course.
+This is 5 of 10 small javascript project tutorials featured in Vijay Kumar's Udemy course. This tutorial guides the viewer through writing a simple web  browser palindrome checker application.
 
 I love palindromes :U
 So I enjoyed this project because now I have a fun app to play with! xD

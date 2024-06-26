@@ -5,7 +5,7 @@ PROJECT: Love Compatability Calculator
 
 Overview:
 
-This is 1 of 10 small javascript project tutorials featured in Vijay Kumar's Udemy course.
+This is 1 of 10 small javascript project tutorials featured in Vijay Kumar's Udemy course. This tutorial guides the user through writing a simple web browser application of a love compatability calculator. The actual compatability between the two input values is arbitrary, as the result is chosen based on a random number generator.
 
 As always, my end result will look different than what the projects specify. I do this for two reasons. First, I want ensure I understand what I'm doing, so I will alter and tinker with the code to try new things to see what else I can do with it. And second, I like to customize things! It's fun to make it your own, and I want to apply my design background to my work.
 

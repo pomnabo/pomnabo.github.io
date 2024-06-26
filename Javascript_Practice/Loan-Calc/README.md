@@ -4,7 +4,7 @@ https://pomnabo.github.io/Javascript_Practice/Loan-Calc/
 PROJECT: Loan Calculator
 Overview:
 
-This is 3 of 10 small javascript project tutorials featured in Vijay Kumar's Udemy course.
+This is 3 of 10 small javascript project tutorials featured in Vijay Kumar's Udemy course. This tutorial guides the viewer through writing a simple web browser loan calculator application.
 
 It seems this instructor likes to make various calculators. I will still continue their series of exercises, but I am a bit concerned this won't provide enough variation. Even still, the repetition will be helpful!
 

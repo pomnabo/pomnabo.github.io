@@ -2,9 +2,10 @@ https://pomnabo.github.io/Javascript_Practice/BMI-Calc/
 
 ------------------------------
 PROJECT: BMI Calculator
+
 Overview:
 
-This is 2 of 10 small javascript project tutorials featured in Vijay Kumar's Udemy course.
+This is 2 of 10 small javascript project tutorials featured in Vijay Kumar's Udemy course. In this tutorial, viewers are guided through writing a simple BMI calculating web browser application.
 
 ------------------------------
 Coding Challenges:

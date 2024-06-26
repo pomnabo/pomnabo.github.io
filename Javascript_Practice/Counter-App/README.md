@@ -5,7 +5,7 @@ PROJECT: Counter Application
 
 Overview:
 
-This is 4 of 10 small javascript project tutorials featured in Vijay Kumar's Udemy course.
+This is 4 of 10 small javascript project tutorials featured in Vijay Kumar's Udemy course. This tutorial guides the viewer in writing a simple web browser application of a manual number counter.
 
 ------------------------------
 Coding Challenges:
