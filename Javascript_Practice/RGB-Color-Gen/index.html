@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>WEBSITE TITLE</title>
+<title>RGB Color Selector</title>
 
 <link rel="stylesheet" href="css/style.css" type="text/css">
 <script defer src="js/script.js"></script>
@@ -13,6 +13,60 @@
 </head>
 
 <body>
+
+    <div class="container">
+
+        <h1>RGB Color Selector</h1>
+
+        <div class="color-box" id="colorBox"></div>
+
+        <div class="slider-container">
+
+            <div class="label-style">
+                <label for="redSlider">Red:</label><br>
+                <label for="grnSlider">Green:</label><br>
+                <label for="bluSlider">Blue:</label>
+            </div>
+
+            <div class="slider-style">
+                <input type="range" id="redSlider" min="0" max="255"><br>
+                <input type="range" id="grnSlider" min="0" max="255"><br>
+                <input type="range" id="bluSlider" min="0" max="255">
+            </div>
+
+            <div class="value-style">
+                <span id="redValue">0</span><br>
+                <span id="grnValue">0</span><br>
+                <span id="bluValue">0</span>
+            </div>
+
+            <!------------------------------------------------------------------
+            <div class="slider-style">
+                <label for="redSlider">Red:</label>
+                <input type="range" id="redSlider" min="0" max="255">
+                <span id="redValue">0</span>
+            </div>            
+
+            <div class="slider-style">
+                <label for="grnSlider">Green:</label>
+                <input type="range" id="grnSlider" min="0" max="255">
+                <span id="grnValue">0</span>
+            </div>
+
+            <div class="slider-style">
+                <label for="bluSlider">Blue:</label>
+                <input type="range" id="bluSlider" min="0" max="255">
+                <span id="bluValue">0</span>
+            </div>
+        ----------------------------------------------------------------------->
+        </div>
+
+        <div class="btn-effects" id="btnEffects">
+            <button id="copyBtn">Copy RGB Value</button>
+            <div id="inputType" class="input-type-value"></div>
+        </div>
+
+    </div>
 
 
 

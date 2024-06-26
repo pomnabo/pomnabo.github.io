@@ -1,3 +1,15 @@
+/*
+Color Pallette: for this, I think it's best to make the background a sort of rainbow gradient, and then use a dark grey color for the app container, and offwhite for the text.
+
+#E34953 = Tunaroll Red
+#EBCC0D = Buttercup Yellow
+#503FDF = Indigo Blue
+#D8E0DE = Offwhite
+#3B3F3E = Dark Grey
+
+*/
+
+
 * { /* Always add this * at the top of the CSS document to reset the browser's margins; this ensures the styling will work as intended. */
     box-sizing: border-box;
     margin: 0;
@@ -6,24 +18,125 @@
 
 /* You need to use a @font-face selector for each font you wish to apply to your website*/
 @font-face {
-  font-family: 'Aladin';
-  src: url('../assets/fonts/Aladin-Regular/Aladin-Regular.ttf') format('truetype');
+  font-family: 'NeverMind Bauhaus';
+  src: url('../assets/fonts/NeverMindBauhaus-Bold.ttf') format('truetype');
 }
 
-@font-face {  
-  font-family: 'Open Sans';
-  src: url('../assets/fonts/OpenSans-Regular/OpenSans-Regular.ttf') format('truetype');
+
+html {
+  font-family: sans-serif;
 }
 
-      html {
-        font-family: sans-serif;
-        color: #999999;
-      }
+body {
+  width: 50%;
+  margin: 0 auto;
+  background: linear-gradient(to right, #E34953, #EBCC0D, #503FDF);
+}
 
-      body {
-        width: 50%;
-        max-width: 800px;
-        min-width: 480px;
-        margin: 0 auto;
-        background-color: #222222;
-      }
+.container{
+  display: flex;
+  flex-direction: column;
+  font-family: 'NeverMind Bauhaus';
+  color: #D8E0DE;
+  background-color: #3B3F3E;
+  padding: 30px;
+  margin: 100px auto;
+  align-items: center;
+  max-width: 450px;
+  min-width: 380px;
+  box-shadow: 3px 3px 20px rgba(0,0,0,0.4);
+  border: none;
+  border-radius: 5px;
+}
+
+.container h1{
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.color-box{
+  width: 90%;
+  height: 200px;
+  background-color: #D8E0DE;
+  border-radius: 3px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.slider-container{
+  padding: 10px;
+  margin: 0 auto;  
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  display:inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.label-style{
+  text-align: left;  
+  margin-bottom: 10px;
+}
+
+.slider-style{
+  margin-bottom: 10px;
+}
+
+.value-style{  
+  margin-bottom: 10px;
+  width: 50px;
+}
+
+label{
+  margin-right: 10px;
+}
+
+input[type="range"]{
+  margin-right: 10px;
+}
+
+span{
+  display: inline-block;
+  text-align: left;
+}
+
+.btn-effects{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+button{
+  padding: 15px;
+  font-family: 'NeverMind Bauhaus';
+  font-size: 1.3em;
+  color: #3B3F3E;
+  background-color: #D8E0DE;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover{
+  color: #EBCC0D;
+  background-color: #503FDFD5;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;  
+}
+
+.input-type-value{
+  padding: 15px 20px;
+  background-color: #D8E0DE;
+  font-size: 1.3em;
+  color: #3B3F3E;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+}
