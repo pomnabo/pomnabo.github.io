@@ -1,3 +1,10 @@
+/*
+Color Pallette: I wanted to do something with green this time.
+
+#8AE692 = Shamrock Shake Green
+#132600 = Dark Forest Green
+*/
+
 * { /* Always add this * at the top of the CSS document to reset the browser's margins; this ensures the styling will work as intended. */
     box-sizing: border-box;
     margin: 0;
@@ -6,24 +13,76 @@
 
 /* You need to use a @font-face selector for each font you wish to apply to your website*/
 @font-face {
-  font-family: 'Aladin';
-  src: url('../assets/fonts/Aladin-Regular/Aladin-Regular.ttf') format('truetype');
+  font-family: 'Nova Slim';
+  src: url('../assets/fonts/NovaSlim-Regular.ttf') format('truetype');
 }
 
-@font-face {  
-  font-family: 'Open Sans';
-  src: url('../assets/fonts/OpenSans-Regular/OpenSans-Regular.ttf') format('truetype');
+
+html {
+  font-family: sans-serif;
 }
 
-      html {
-        font-family: sans-serif;
-        color: #999999;
-      }
+body {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #132600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-      body {
-        width: 50%;
-        max-width: 800px;
-        min-width: 480px;
-        margin: 0 auto;
-        background-color: #222222;
-      }
+
+.container{
+  margin: 0 auto;
+  width: 25em;
+  height: 95px;
+  display: grid;
+  font-family: 'Nova Slim';
+  align-items: center;
+  grid-template-columns: 8fr 4fr;
+  background-color: #8AE692;
+  border: none;
+  border-radius: 5px;
+  animation: neon-glow 1.5s ease-in-out infinite alternate;
+}
+
+.clock-container{
+  background-color: #132600;
+  color: #8AE692;
+  font-size: 3em;
+  text-align: center;
+  padding: 10px;
+  margin-left: 15px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock-container span{
+  width: 60px;
+  display: inline-block;
+  text-align: center;
+}
+
+@keyframes neon-glow{
+  0%{
+    box-shadow: 0 0 5px #8AE692, 0 0 20px #8AE692;
+  }
+  100%{
+    box-shadow: 0 0 5px #8AE692, 0 0 20px #8AE692;
+  } 
+}
+
+.date-container{
+  padding: 10px;
+  color: #132600;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.date-container span{
+  font-size: 2em;
+}
