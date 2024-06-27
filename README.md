@@ -13,6 +13,7 @@ Current:
 Coursera: "HTML, CSS, and Javascript for Web Developers"
 The Odin Project (Full Stack Developer roadmap)
 MDN Web Docs
+Udemy Courses (Too many instructors to list!)
 
 Planned:
 CS50X
@@ -20,6 +21,7 @@ CS50P
 CS50AI
 
 
-My goal is to become well versed as a full stack software developer. I have recently (as of October 2023) been doing contract work annotating various AI language models. I would like to eventually see how I can deeped my knowledge of linguistics and apply it to the field, as it seems to be where much of the tech industry is heading. You may have seen my other respository "KarretBot," which I still plan to work on once I am more adept at programming; especially with Python. Right now Karret is not planned to become an AI model, as she was intended to be used by a very small gaming community, a Mabinogi guild called "Tuathade"; but who knows! Perhaps I will be able to learn how to create my own AI and Karret will be able to reach her full potential!
+My goal is to become well versed as a full stack software developer. I have recently (as of October 2023) been doing contract work annotating various AI language models. I would like to eventually see how I can deepen my knowledge of linguistics and apply it to the field, as it seems to be where much of the tech industry is heading.
+You may have seen my other respository "KarretBot," which I still plan to work on once I am more adept at programming; especially with Python. Right now Karret is not planned to become an AI model, as she was intended to be used by a very small gaming community, a Mabinogi guild called "Tuathade"; but who knows! Perhaps I will be able to learn how to create my own AI and Karret will be able to reach her full potential!
 
 Thanks for reading! If you're interested in any of my projects or want to collaborate and discuss, please contact me at: Contact@pomnabo.com
