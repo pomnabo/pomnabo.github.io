@@ -20,4 +20,6 @@ Otherwise, this tutorial again featured use of some strange html tag use, and st
 ------------------------------
 Other Notes:
 
+I didn't like how the colors were different for each chunk of the time values; especially because the seconds color was too close in saturation and shade to the background. So naturally I styled it to my liking. I also didn't like how the colons between each time chunk value were right on their closest value; so instead, I just added the colons as a fixed part of the HTML and put the spans between them.
+
 I wanted to try adding the year value as well, but the formulas this tutorial uses in the javascript are a little above my learned level, so I wouldn't even know where to start adding that. Perhaps I will revisit this project later to udpate that!
