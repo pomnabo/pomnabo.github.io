@@ -26,10 +26,120 @@ html {
 
 body {
   margin: 0 auto;
-  background-color: linear-gradient(to bottom, #CEE192, #557D32);
-  width: 100vh;
+  background: linear-gradient(#232720, #557D32);
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .container{
   margin: 0 auto;
+  background: linear-gradient(#CEE192, #557D32);
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+  max-width: 400px;
+  border-radius: 10px;
+  text-align: center;
+  border: 15px solid #557D32;
+  margin-top: 2%;
+}
+
+h1{
+  padding: 15px;
+  width: 100%;
+  background-color: #557D32;
+  font-family: 'Sailorette';
+  color: #CEE192;
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.form-group{
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+label{
+  font-family: 'Sailorette';
+  font-size: 2em;
+  color: #232720;
+  margin: 0 auto;
+}
+
+input[type="date"]{
+  margin: 0 auto;
+  margin-top: 15px;
+  background-color: #557D32;
+  /*width: 60%;*/
+  font-weight: bold;
+  font-size: 1.8em;
+  color: #CEE192;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+input:focus[type="date"]{
+  outline: none;
+}
+
+button{
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-family: 'Sailorette';
+  font-size: 1.5em;
+  color: #557D32;
+  background-color: #CEE192;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #557D32;
+  color: #CEE192;
+  transition: 0.3s ease;
+}
+
+.result-container{
+  display: none;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+  background-color: #CEE192;
+  color: #557D32;
+  text-align: left;
+}
+
+.results-item h3{
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #557D32;
+  margin-bottom: 5px;
+}
+
+.results-item p{
+  margin-bottom: 10px;
+  color: #232720;
+}
+
+a, a:hover, a:link, a:visited, a:active{
+  text-decoration: none;
+  color: #232720;
+}
+
+footer{
+  position: fixed;
+  display: flex;
+  margin: 0 auto;
+  bottom: 0;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #232720;
+  font-size: 1.2em;
+  text-align: center;
 }

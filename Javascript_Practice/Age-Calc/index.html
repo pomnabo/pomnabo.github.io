@@ -21,20 +21,20 @@
         <form id="ageCalculator">
             <div class="form-group">
                 <label for="ageInput">When is your birthday?</label>
-                <input id="birthdate" type="date" placeholder="DD/MM/YYY" required>
+                <input id="birthdate" type="date" placeholder="DD/MM/YYY" required><!--maxlength="10" would be used for a text input-->
             </div>
 
             <div class="form-group">
-                <button type="submit" onclick="calculateAge()">Get Exact Age</button>
+                <button type="submit">Get Exact Age</button><!-- onclick="calculateAge()" you would have to call a "click" in the event listener-->
             </div>
         </form>        
         
         <div class="result-container" id="resultContainer">
             <div id="ageResults" class="age-results">
-                <div class="results-item">
+                <!--<div class="results-item">
                     <h3>Weeks Passed:</h3>
                     <p>ageInWeeks</p>
-                </div>
+                </div>-->
             </div>
         </div>
 
@@ -45,7 +45,7 @@
 <footer>
     <div id="font-credits">
         <span class="credits">
-            "Sailorette" font courtesy of <a target="_blank" href="https://www.mimetica.design/">Mimetica</a>, used with permission under its provided free font license.
+            "Sailorette" font courtesy of <a target="_blank" href="https://www.mimetica.design/">Mimetica</a>, used with permission according to licensure.
         </span>
     </div>
 </footer>
