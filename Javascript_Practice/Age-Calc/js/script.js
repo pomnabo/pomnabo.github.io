@@ -4,7 +4,7 @@ function calculateAge(){
     const bdayInput = document.getElementById("birthdate").value;
     const bdayParts = bdayInput.split("-");
     const bdayYear = bdayParts[0];
-    const bdayMonth = bdayParts[1];
+    const bdayMonth = bdayParts[1] - 1;
     const bdayDay = bdayParts[2];
     const bdayDate = new Date(bdayYear, bdayMonth, bdayDay);
 
