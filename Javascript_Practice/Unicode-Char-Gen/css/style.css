@@ -1,3 +1,13 @@
+/*
+For this project, I've decided to go with some grey and blue tones, with a pop of goldenrod accent!
+
+#222222 = charcoal grey
+#999999 = greytist grey
+#312D4C = midnight blue
+#EEB233 = "pomnabo gold"
+
+*/
+
 * { /* Always add this * at the top of the CSS document to reset the browser's margins; this ensures the styling will work as intended. */
     box-sizing: border-box;
     margin: 0;
@@ -6,22 +16,92 @@
 
 /* You need to use a @font-face selector for each font you wish to apply to your website*/
 @font-face {
-  font-family: 'Aladin';
-  src: url('../assets/fonts/Aladin-Regular/Aladin-Regular.ttf') format('truetype');
+  font-family: 'Rousseau Deco';
+  src: url('../assets/fonts/rousseau-deco.ttf') format('truetype');
 }
-
-@font-face {  
-  font-family: 'Open Sans';
-  src: url('../assets/fonts/OpenSans-Regular/OpenSans-Regular.ttf') format('truetype');
-}
-
 
 html {
   font-family: sans-serif;
-  color: #999999;
+  color: #222222;
 }
 
 body {
+  font-family: 'Rousseau Deco';
   margin: 0 auto;
-  background-color: #222222;
+  background-color: #999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container{
+  background-color: #222222;;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+  color: #999999;
+  max-width: 400px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 auto;
+  border-left: 50px solid #312D4C;
+  border-right: 50px solid #312D4C;
+}
+
+h1{
+  font-size: 2em;
+  color: #EEB233;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
+
+input[type="text"]{
+  font-size: 1.5em;
+  color: #EEB233;
+  background-color: #312D4C;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border: none;
+  padding: 15px;
+}
+
+input:focus[type="text"]{
+  outline: none;
+}
+
+button{
+  background-color: #EEB233;
+  color: #312D4C;
+  font-family: 'Rousseau Deco';
+  font-size: 1.6em;
+  display: flex;
+  text-align: center;
+  padding: 15px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover{
+  background-color: #312D4C;
+  color:#EEB233;
+  transition: 0.2s ease-in-out;
+}
+
+hr{
+  width: 75%;
+  height: 3px;
+  background-color: #999999;
+  border: none;
+  border-radius: 3px;
+  margin: 0 auto;
+}
+
+p{
+  padding: 20px;
+  font-size: 2em;
 }

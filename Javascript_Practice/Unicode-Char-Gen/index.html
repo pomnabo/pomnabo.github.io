@@ -16,10 +16,10 @@
 
     <div class="container">
         <h1>Get Unicode Character for:</h1>
-        <input type="text" placeholder="Enter a character here.">
+        <input type="text" id="inputType" maxlength="1" placeholder="Enter a character here.">        
+        <button onclick="detectChar()">Display Unicode</button>
         <hr>
-        <button id="detectBtn">Detect Unicode</button>
-        <div id="results"></div>
+        <p id="result"></p>
     </div>
 
 
