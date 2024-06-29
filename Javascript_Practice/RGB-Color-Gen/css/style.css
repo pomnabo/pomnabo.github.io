@@ -28,9 +28,17 @@ html {
 }
 
 body {
-  width: 50%;
+  width: 100vw;
   margin: 0 auto;
-  background: linear-gradient(to right, #E34953, #EBCC0D, #503FDF);
+  margin-top: 50px;
+  background: linear-gradient(217deg, rgba(227,73,83,0.8), rgba(227,73,83,0) 80%),
+            linear-gradient(127deg, rgba(235,204,13,0.8), rgba(235,204,13,0) 60%),
+            linear-gradient(336deg, rgba(80,63,223,0.8), rgba(80,63,223,0) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container{
@@ -40,7 +48,6 @@ body {
   color: #D8E0DE;
   background-color: #3B3F3E;
   padding: 30px;
-  margin: 100px auto;
   align-items: center;
   max-width: 450px;
   min-width: 380px;

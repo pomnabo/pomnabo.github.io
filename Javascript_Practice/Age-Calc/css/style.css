@@ -1,6 +1,9 @@
 /*
-Color Pallette:
+Color Pallette: Felt like olive tones.
 
+#557D32 = Olive Greens
+#CEE192 = Pastel Limes
+#232720 = Dark Evergreen
 */
 
 * { /* Always add this * at the top of the CSS document to reset the browser's margins; this ensures the styling will work as intended. */
@@ -11,17 +14,22 @@ Color Pallette:
 
 /* You need to use a @font-face selector for each font you wish to apply to your website*/
 @font-face {
-  font-family: 'Aladin';
-  src: url('../assets/fonts/Aladin-Regular/Aladin-Regular.ttf') format('truetype');
+  font-family: 'Sailorette';
+  src: url('../assets/fonts/Sailorette.otf') format('truetype');
 }
 
 
 html {
   font-family: sans-serif;
-  color: #999999;
+  color: #CEE192;
 }
 
 body {
   margin: 0 auto;
-  background-color: #222222;
+  background-color: linear-gradient(to bottom, #CEE192, #557D32);
+  width: 100vh;
+}
+
+.container{
+  margin: 0 auto;
 }

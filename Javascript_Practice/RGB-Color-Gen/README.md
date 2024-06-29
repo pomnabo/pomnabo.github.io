@@ -27,3 +27,8 @@ The last challenge I encountered was that the sliders don't reset to their defau
 Other Notes:
 
 There were some opperands (if that's what they're called) that I am unfamiliar with, and unsure why they're used in this tutorial. It had to do with the copy error check that was also in the tutorial (which he didn't expain why it was there; so am confusion); specifically the use of "=>" as a part of the ".then/.catch" functions.
+
+------------------------------
+UPDATE: June 28, 2024
+
+I stumbled upon a gradient I liked better for this project, so I played around and changed it to my preference. I also updated the positioning of the body selector css so it behaves better.
