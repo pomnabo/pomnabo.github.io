@@ -200,10 +200,13 @@ textarea:focus {
   text-decoration: none;
 }
 
+.btn-div {
+  text-align: center;
+}
+
 button {
   margin: 0 auto;  
   text-align: center;
-  margin-left: 25%;
   margin-bottom: 24px;
   padding: 16px;
   background-color: #3D55CC;
