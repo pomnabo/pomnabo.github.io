@@ -1,0 +1,222 @@
+/*
+Color Pallette::
+#DADDF2 = offwhite
+#0C3332 = wine dark sea
+#35D7D3 = slightly cyan
+#8D556D = Mauvish
+#FF99C4 = bubble gum pink
+#1E2A66 = dark blue
+#3D55CC = Gently Royal blue
+*/
+
+
+* { /* Always add this * at the top of the CSS document to reset the browser's margins; this ensures the styling will work as intended. */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* You need to use a @font-face selector for each font you wish to apply to your website*/
+@font-face { /* Body Text */
+  font-family: 'Bellefair';
+  src: url('../assets/fonts/Bellefair/Bellefair-Regular.ttf') format('truetype');
+}
+
+@font-face {  /* Headers & Emphasis */
+  font-family: 'Sansita';
+  src: url('../assets/fonts/Sansita/Sansita-Regular.ttf') format('truetype');
+}
+
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #DADDF2;
+  font-family: 'Bellefair';
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 3%;
+  background-color: #DADDF2;
+  border: 12px solid #3D55CC;
+  max-width: 85%;
+  border-radius: 16px;
+}
+
+h1 {
+  margin: 0 auto;
+  background-color: #3D55CC;
+  font-family: 'Sansita';
+  padding: 8px 0px 24px 0px;
+  text-align: center;
+  color: #DADDF2;  
+  font-size: 2.5em;
+}
+
+/********************* Instructions Drop Down Menu **********************/
+
+.instructions {
+  margin: 0 auto;
+  color: #1E2A66;  
+  font-size: 1.3em;
+  width: 90%;
+  margin-top: 8px;
+}
+
+summary {
+  font-family: 'Sansita';
+  cursor: pointer;
+  padding: 12px;  
+  font-size: 1.3em;
+  border-radius: 32px;
+}
+
+/* thought this was a cool feature, but ultimately didn't help; so I'm keeping it here for future reference
+summary::marker {
+  color: #3D55CC;
+}
+*/
+
+summary:hover, summary:focus {
+  background-color: #3D55CC;
+  color: #DADDF2;
+  transition: 0.2s ease-in;
+}
+
+ul {  
+  margin-top: 12px;
+}
+
+li {
+  padding: 8px;
+  margin-left: 24px;  
+  font-size: 1.1em;
+}
+
+
+
+/********************** Bingo Board Crafter Form Area ******************/
+form {
+  margin: 0 auto;
+  font-family: 'Sansita';
+  font-size: 1.5em;
+  color: #1E2A66;
+  padding: 16px;
+  width: 90%;
+  flex-direction: column;
+}
+
+.crafter-items {
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+/* Toggle Switch Start */
+.free-switch {
+  position: relative;
+  display: inline-block;
+  width: 64px;
+  height: 38px;
+  margin-top: 8px;
+}
+.free-switch input { /* Hides the default html check box */
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 3px;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  background-color: #8D556D;
+  transition: 0.2s ease-in;
+  padding: 4px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  background-color: #DADDF2;
+  transition: 0.2s ease-in;
+}
+
+input:checked + .slider {
+  background-color: #3D55CC;
+}
+
+input:checked + .slider:before {
+  transform: translateX(30px)
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Toggle Switch End */
+
+select {
+  margin-top: 8px;
+  padding: 8px 24px;
+  border-radius: 24px;
+  max-width: 300px;
+  background-color: #1E2A66;
+  font-family: "Sansita";
+  color: #DADDF2;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+
+
+textarea {
+  margin: 0 auto;
+  margin-top: 8px;
+  padding: 8px;
+  width: 95%;
+  height: 100px;
+  background-color: #DADDF2;
+  color: #1E2A66;
+  font-family: 'Bellefair';
+  font-size: 1em;
+  border-radius: 8px;
+  border: 4px solid #3D55CC;
+}
+
+textarea:focus {
+  text-decoration: none;
+}
+
+button {
+  margin: 0 auto;  
+  text-align: center;
+  margin-left: 25%;
+  margin-bottom: 24px;
+  padding: 16px 36px;
+  background-color: #3D55CC;
+  color: #DADDF2;
+  font-family: "Sansita";
+  font-size: 2em;
+  border: none;
+  border-radius: 36px;
+  width: 50%;
+}
+
+button:hover {
+  background-color: #8D556D;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bingo Board Crafter</title>
+
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<script defer src="js/script.js"></script>
+<!-- Use "defer" when adding javascript files so that the javascript loads after the rest of the page has loaded first -->
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h1>Bingo Board Crafter</h1>
+<!-------------------  Instructions Menu ---------------------------------------->
+        <div class="instructions">            
+            <details class="toggle-menu"><summary>Instructions:</summary>
+                <ul>
+                    <li>Use the dropdown menu to select the number of boxes you want for your bingo card(s).</li>
+                    <li>Type your bingo card prompts into the text box below. Use a plus sign "+" before each prompt to indicate a new box item. You must provide the minimum number of prompts to fill the board. You may also provide additional prompts beyond the maximum for more unique cards.</li>
+                    <li>Toggle the switch on or off to apply a fixed "Free Space" box in the center of your board. You may also write your own custom "free space" prompt as a line break item.</li>                
+                    <li>When finished, click the "generate" button to create your randomized bingo card. Click the button again to generate alternative randomized placements. Your bingo card will generate in a new window.</li>
+                    <li>You can click the printer icon to save your board as an image file, or the download icon to save as a pdf.</li>
+                </ul>
+            </details>
+        </div>
+<!-------------------  Bingo Crafter Form ---------------------------------------->       
+        <div class="bingo-crafter">
+            <form id="bingoCrafter">
+                <div class="crafter-items">
+                    <label for="grid-size">How big is your bingo board?</label>
+                    <br>
+                    <select id="grid-size" required="">
+                        <option value="25sq">5x5 (x25 squares)</option>
+                        <option value="49sq">7x7 (x49 squares)</option>
+                        <option value="81sq">9x9 (x81 squares)</option>
+                    </select>
+                </div>
+                
+                <!-- Toggle Switch -->
+                <div class="crafter-items">
+                    <span>
+                        Do you want a "free space" in the center?
+                    </span>
+                    <br>
+                    <label for="freeSwitch" class="free-switch">
+                        <input type="checkbox" id="freeSwitch">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                
+                <div class="crafter-items">
+                    <label for="promptsField">Bingo Prompts:</label>
+                    <br>
+                    <textarea id="promptsField" placeholder="+Write your bingo prompts in here."></textarea>                    
+                </div>
+                
+            </form>            
+
+            <button id="makeBingoBtn">Generate</button>
+
+        </div>
+
+        
+
+
+    </div>
+
+<!-------------------  Completed Board Section ---------------------------------------->
+    <div class="bingo-board-whole">
+        <h2>[YOUR TITLE HERE]</h2>
+
+    </div>
+
+
+</body>
+</html>
