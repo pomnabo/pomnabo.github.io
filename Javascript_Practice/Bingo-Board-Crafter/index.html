@@ -29,7 +29,9 @@
                 </ul>
             </details>
         </div>
-<!-------------------  Bingo Crafter Form ---------------------------------------->       
+<!-------------------  Bingo Crafter Form ---------------------------------------------------------------------------------------------->       
+        
+        <!------------------------------ Grid Selection Dropdown ----------------------------------------------------->
         <div class="bingo-crafter">
             <form id="bingoCrafter">
                 <div class="crafter-items">
@@ -42,18 +44,23 @@
                     </select>
                 </div>
                 
-                <!-- Toggle Switch -->
-                <div class="crafter-items">
+                <!------------------------------ Toggle Switch ----------------------------------------------------->
+                <div class="crafter-items" id="toggleSwitch">
                     <span>
                         Do you want a "free space" in the center?
                     </span>
                     <br>
-                    <label for="freeSwitch" class="free-switch">
-                        <input type="checkbox" id="freeSwitch">
-                        <span class="slider round"></span>
+                    <span class="yes-no">Yes</span>
+                    <label for="freeSwitch" class="toggle-switch">
+                        <input type="checkbox" id="freeSwitch" class="free-switch">                        
+                        <span class="toggle-handle"></span>
                     </label>
+                    <span class="yes-no">No</span>
+                        
+                    
                 </div>
                 
+                <!------------------------------ Prompts Field ----------------------------------------------------->
                 <div class="crafter-items">
                     <label for="promptsField">Bingo Prompts:</label>
                     <br>
@@ -70,9 +77,10 @@
 
     </div>
 
-    <!-------------------  Completed Board Section ---------------------------------------->
-    <div class="bingo-board-whole">
+    <!-------------------  Completed Board Section ---------------------------------------------------------------------------->
+    <div class="bingo-board-preview" id="bingoPreview">
         <h2>[YOUR TITLE HERE]</h2>
+        <div class="practice"></div>
 
     </div>
 
