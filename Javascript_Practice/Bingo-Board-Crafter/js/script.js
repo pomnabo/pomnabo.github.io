@@ -12,8 +12,8 @@ genBingoBtn.addEventListener("click", genBingoBoard); */
 
 const squareSize = document.getElementById("grid-size").value;
 
-
-const freeSwitch = document.getElementById("freeSwitch").value;
+let freeSwitchValue;
+document.getElementById("freeSwitch").value = "freeSwitchValue";
 
 
 let promptTextArea;

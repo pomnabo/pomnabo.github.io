@@ -23,11 +23,14 @@ Color Pallette::
 }
 
 @font-face {  /* Headers & Emphasis */
-  font-family: 'Sansita';
+  font-family: 'Caviar Dreams';
   src: url('../assets/fonts/caviar_dreams/CaviarDreams.ttf') format('truetype');
 }
 
-
+@font-face {  /* Headers & Emphasis */
+  font-family: 'Caviar Dreams';
+  src: url('../assets/fonts/caviar_dreams/CaviarDreams_Bold.ttf') format('truetype');
+}
 html {
   font-family: sans-serif;
 }
@@ -116,9 +119,7 @@ form {
 
 .crafter-items {
   margin: 0 auto;
-  margin-bottom: 8px;
-  margin-top: 16px;
-  font-weight: bold;
+  margin-top: 22px;
 }
 
 /***************** Toggle Switch Start *****************/
@@ -127,6 +128,7 @@ form {
   display: inline-block;
   height: 44px;
   width: 84px;
+  margin-top: 4px;
 }
 
 .yes-no {
@@ -227,7 +229,7 @@ button {
   font-weight: bold;
   border: none;
   border-radius: 36px;
-  width: 50%;
+  width: 55%;
 }
 
 button:hover {
