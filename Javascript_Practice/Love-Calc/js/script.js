@@ -35,6 +35,9 @@ function calculateLove(){
         closeBtn.addEventListener("click", function(){
             alertBox.style.display = "none";
         });
+
+
+        NOTE TO SELF: make a popup overlay and hide the div
          */       
         
         alert("You forgot to add your signs!");

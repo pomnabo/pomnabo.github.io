@@ -121,6 +121,18 @@ form {
   margin-top: 22px;
 }
 
+select {
+  margin-top: 8px;
+  padding: 12px 24px;
+  border-radius: 24px;
+  max-width: 300px;
+  background-color: #1E2A66;
+  font-family: "Caviar Dreams";
+  color: #DADDF2;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
 /***************** Toggle Switch Start *****************/
 .toggle-switch {
   position: relative;
@@ -182,17 +194,17 @@ input:checked + .toggle-handle:before {
 
 /************************** Toggle Switch End ***************************/
 
-select {
+#titleInput {
   margin-top: 8px;
   padding: 12px 24px;
   border-radius: 24px;
-  max-width: 300px;
+  width: 280px;
+  font-family: 'Caviar Dreams';
   background-color: #1E2A66;
-  font-family: "Caviar Dreams";
-  color: #DADDF2;
   font-size: 0.8em;
-  cursor: pointer;
+  color: #DADDF2;
 }
+
 
 textarea {
   margin: 0 auto;
@@ -224,7 +236,7 @@ button {
   background-color: #3D55CC;
   color: #DADDF2;
   font-family: "Caviar Dreams";
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: bold;
   border: none;
   border-radius: 36px;
@@ -248,9 +260,23 @@ button:hover {
   right: 0;
   left: 0;
   display: none;
+  font-family: "Caviar Dreams";
   overflow-y: hidden;
   overflow-x: hidden;
   z-index: 2;
   cursor: pointer;
 }
 
+#bingoPreview h2 {
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+  color: #3D55CC;
+}
+
+.board-squares {
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+  background-color: #3D55CC;
+}
