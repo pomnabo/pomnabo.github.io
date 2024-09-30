@@ -236,3 +236,21 @@ button:hover {
   transition: 0.3s ease-in;
   cursor: pointer;
 }
+
+
+#bingoPreview {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  z-index: 2;
+  cursor: pointer;
+}
+
