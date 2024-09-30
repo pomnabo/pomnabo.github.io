@@ -25,12 +25,10 @@ Color Pallette::
 @font-face {  /* Headers & Emphasis */
   font-family: 'Caviar Dreams';
   src: url('../assets/fonts/caviar_dreams/CaviarDreams.ttf') format('truetype');
-}
-
-@font-face {  /* Headers & Emphasis */
-  font-family: 'Caviar Dreams';
   src: url('../assets/fonts/caviar_dreams/CaviarDreams_Bold.ttf') format('truetype');
 }
+
+
 html {
   font-family: sans-serif;
 }
@@ -60,6 +58,7 @@ h1 {
   text-align: center;
   color: #DADDF2;  
   font-size: 2.5em;
+  font-weight: bold;
   width: 100%;
 }
 
@@ -171,9 +170,11 @@ form {
 input:focus + .toggle-handle {
   display: none;
 }
+
 input:checked + .toggle-handle {
   background-color: #8D556D;
 }
+
 input:checked + .toggle-handle:before {
   transform: translateX(40px);
 }
@@ -192,8 +193,6 @@ select {
   font-size: 0.8em;
   cursor: pointer;
 }
-
-
 
 textarea {
   margin: 0 auto;
