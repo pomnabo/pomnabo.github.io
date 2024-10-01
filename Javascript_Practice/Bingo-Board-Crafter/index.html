@@ -38,9 +38,9 @@
                     <label for="grid-size">How big is your bingo board?</label>
                     <br>
                     <select id="grid-size" required="">
-                        <option value="25sq">5x5 (x25 squares)</option>
-                        <option value="49sq">7x7 (x49 squares)</option>
-                        <option value="81sq">9x9 (x81 squares)</option>
+                        <option value="25">5x5 (x25 squares)</option>
+                        <option value="49">7x7 (x49 squares)</option>
+                        <option value="81">9x9 (x81 squares)</option>
                     </select>
                 </div>
                 
@@ -90,7 +90,7 @@
 
     <!-------------------  Completed Board Section ---------------------------------------------------------------------------->
     <div class="bingo-board-preview" id="bingoPreview" onclick="previewOff()">
-        <h2>[YOUR TITLE HERE]</h2>
+        <h2 id="bingoTitle"></h2>
         <div class="board-squares">say less chef</div>
 
     </div>

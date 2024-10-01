@@ -269,9 +269,12 @@ button:hover {
 
 #bingoPreview h2 {
   margin: 0 auto;
+  margin-top: 2%;
   text-align: center;
   width: 90%;
   color: #3D55CC;
+  padding: 16px;
+  font-size: 2em;
 }
 
 .board-squares {
@@ -280,3 +283,4 @@ button:hover {
   width: 90%;
   background-color: #3D55CC;
 }
+
