@@ -272,15 +272,52 @@ button:hover {
   margin-top: 2%;
   text-align: center;
   width: 90%;
-  color: #3D55CC;
+  color: #DADDF2;
+  background-color: #3D55CC;
   padding: 16px;
   font-size: 2em;
 }
 
-.board-squares {
+.board-container {
   margin: 0 auto;
+  position: absolute;
+  display: inline-flex;
   text-align: center;
   width: 90%;
-  background-color: #3D55CC;
+  background-color: #DADDF2;
 }
 
+.error-msg {
+  margin: 0 auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  color: #8D556D;
+  font-size: 1.8em;
+  font-weight: bold;
+  padding: 32px;
+}
+
+.bingo-box {
+  margin: 0 auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 2% 3%;
+  width: 20%;
+  color: #3D55CC;
+}
+
+.bingo-5x5 {
+  width: 20%;
+}
+
+.bingo-7x7 {
+  width: 14.2%;
+}
+
+.bingo-9x9 {
+  width: 11.1%;
+}
