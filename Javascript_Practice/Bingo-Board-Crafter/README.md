@@ -14,6 +14,8 @@ Nymphont License v1.00
 
 This license can also be found at this permalink: https://www.fontsquirrel.com/license/Caviar-Dreams
 
+Glyph Icons courtesy of GlyphIcons:
+https://glyphicons.com/
 
 
 App designed and built by me, pomnabo.
@@ -61,10 +63,13 @@ Coding Challenges:
 
 The first major challenge I had was getting the user inputs to generate when the button gets pushed. I looked up each individual input element on google to see what sort of code I would need in order to call them through the function. I really struggled with this because my searches provided conflicting, or over complicated information, or it didn't apply at all. After some trial and error with the different suggestions, I found the best examples through MDN web docs, and w3schools; so I applied those. This also included realizing that I needed to declare the values of each input inside the function for it to work as intended.
 
+My next challenge was creating the number of divs I wanted each time the button is pushed. At first, only one div was being created. So with some review, I decided to use a while loop with a counter based on 
 
+The next challenge I encountered was each div having the same prompt item. Initially, I was considering assigning separate Ids to each new div created, but I thought that might things more complicated than necessary, and shelved that idea in case I couldn't find a better alternative. Thankfully, I did! I moved the randomizing selection action into its own separate function, which gets called inside the div creation loop; so that each time a div is made, the prompt is called again; which led me to my next problem.
 
+I ended up getting duplicates! So I googled how to prevent it, and in one example I found on stack overflow, they used the splice() method. To apply this, I added a new variable to observe the index of the array of prompts, and then spliced the list starting at that index number whenever the function gets called.
 
-
+Next, I was struggling to get all the divs that get created to show up within the bingo board container div. Initially it was only showing 5 divs regardless of the size of the bingo board. After moving things around, I found that nesting a separate if/else loop inside the newsquare function would change the size of the divs as intended.
 
 
 ------------------------------

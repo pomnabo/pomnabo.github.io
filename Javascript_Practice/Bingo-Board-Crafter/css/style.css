@@ -19,15 +19,14 @@ Color Pallette::
 /* You need to use a @font-face selector for each font you wish to apply to your website*/
 @font-face { /* Body Text */
   font-family: 'Bellefair';
-  src: url('../assets/fonts/Bellefair/Bellefair-Regular.ttf') format('truetype');
+  src: url('../fonts/Bellefair/Bellefair-Regular.ttf') format('truetype');
 }
 
 @font-face {  /* Headers & Emphasis */
   font-family: 'Caviar Dreams';
-  src: url('../assets/fonts/caviar_dreams/CaviarDreams.ttf') format('truetype');
-  src: url('../assets/fonts/caviar_dreams/CaviarDreams_Bold.ttf') format('truetype');
+  src: url('../fonts/caviar_dreams/CaviarDreams.ttf') format('truetype');
+  src: url('../fonts/caviar_dreams/CaviarDreams_Bold.ttf') format('truetype');
 }
-
 
 html {
   font-family: sans-serif;
@@ -280,6 +279,8 @@ button:hover {
 
 .board-container {
   margin: 0 auto;
+  margin-left: 5%;
+  margin-right: 5%;
   position: absolute;
   display: inline-flex;
   text-align: center;
@@ -300,13 +301,10 @@ button:hover {
 
 .bingo-box {
   margin: 0 auto;
-  margin-left: 5%;
-  margin-right: 5%;
   text-align: center;
   font-size: 1.3em;
   font-weight: bold;
   padding: 2% 3%;
-  width: 20%;
   color: #3D55CC;
 }
 

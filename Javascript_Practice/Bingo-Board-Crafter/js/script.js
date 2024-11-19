@@ -1,7 +1,12 @@
 
 const bingoTitle = document.getElementById("bingoTitle");
 const boardDiv = document.getElementById("boardContainer");
-let gridAxis;
+let boxTotal;
+let bingoBoard = "";
+let colCount = 1;
+let rowCount = 1;
+
+
 
 function bingoBoardFinal() { /* when this function is called, it will generate a grid of squares based on the user criteria */
 
@@ -10,12 +15,34 @@ function bingoBoardFinal() { /* when this function is called, it will generate a
     const freeSwitchValue = document.getElementById("freeSwitch").checked;
     const titleValue = document.getElementById("titleInput").value.trim();
     const promptsInput = document.getElementById("promptsField").value;
+    let divSquare;
+    let gridAxis;
+    let changeSize;
     
 
     //This will collect the prompts and put them into an array
     const promptList = promptsInput.split("-");
+    promptList.shift(); //removes the empty string from the first item of the array.
     const promptLength = promptList.length;
-    const getPrompt = promptList[(Math.floor(Math.random() * promptList.length -[0]))]
+    let newPrompt = "";
+
+    for (const prompt of promptList) {
+        
+    }
+
+    function getPrompt() {
+        var randomPrompt = promptList[(Math.floor(Math.random() * promptList.length))];
+        const promptIndex = promptList.indexOf(randomPrompt);
+        
+        newPrompt = randomPrompt;
+        divSquare.innerHTML = newPrompt;
+        
+        promptList.splice(promptIndex, 1);//This will remove items from the array so they aren't reused in subsequent squares
+        console.log(promptList);
+    }
+    
+
+    
 
     
 
@@ -29,31 +56,52 @@ function bingoBoardFinal() { /* when this function is called, it will generate a
         
     }
     else {
-        
-        if(gridSize === 49){
-            gridAxis = 7;
-        }else if(gridSize === 81){
-            gridAxis = 9;
-        }else{
-            gridAxis = 5;
-        }
-
+        /* this loop needs to be presented in the order the values are arranged in the document, otherwise it will declare "undefined" */
         bingoTitle.innerHTML = titleValue;
         
         document.getElementById("bingoPreview").style.display = "block";//turns on the popup preview overlay when the 'generate' button is clicked
         
 
-        function bingoBoxes() {
-            document.getElementById("boardContainer")
+        if(gridSize == 25){
+            gridAxis = 5;
+        }else if(gridSize == 49){
+            gridAxis = 7;
+        }else{
+            gridAxis = 9;
+        }        
+        
+
+        function newSquare() {
+            divSquare = document.createElement("div");
+            divSquare.classList.add("bingo-box");
+            boardDiv.appendChild(divSquare);
+
+            if(gridAxis == 5){
+                divSquare.classList.add("bingo-5x5");
+            }else if(gridAxis == 7){
+                divSquare.classList.add("bingo-7x7");
+            }else{
+                divSquare.classList.add("bingo-9x9");
+            }    
+
+            
         }
 
+        
 
-        for (var i = 0; i < gridSize; i++){
-            var div = document.createElement("div");
-            boardDiv.classList.add("bingo-box");
-            boardDiv.textContent = getPrompt;
 
+        
+        
+
+        
+        while (colCount < gridAxis + 1 || rowCount < gridAxis + 1) {
+            newSquare();
+            getPrompt();
+            colCount ++;
+            rowCount ++;
         }
+        
+      
         
 
     }
@@ -61,7 +109,7 @@ function bingoBoardFinal() { /* when this function is called, it will generate a
 
     
 
-    console.log(gridSize, freeSwitchValue, titleValue, promptList, promptLength, getPrompt, gridAxis);
+    console.log(gridSize, freeSwitchValue, titleValue, promptLength, gridAxis, colCount);
     
 }
 
@@ -70,6 +118,9 @@ function bingoBoardFinal() { /* when this function is called, it will generate a
 function previewOff() {
     boardDiv.classList.remove("error-msg");
     document.getElementById("bingoPreview").style.display = "none";//turns off the popup overlay when the div is clicked
+    colCount = 1;
+    rowCount = 1;
+    boardDiv.innerHTML = "";
 }
 
 
@@ -87,4 +138,44 @@ function previewOff() {
 - prompt 08
 - prompt 09
 - prompt 10
+- prompt 11
+- prompt 12
+- prompt 13
+- prompt 14
+- prompt 15
+- prompt 16
+- prompt 17
+- prompt 18
+- prompt 19
+- prompt 20
+- prompt 21
+- prompt 22
+- prompt 23
+- prompt 24
+- prompt 25
+- prompt 26
+- prompt 27
+- prompt 28
+- prompt 29
+- prompt 30
+- prompt 31
+- prompt 32
+- prompt 33
+- prompt 34
+- prompt 35
+- prompt 36
+- prompt 37
+- prompt 38
+- prompt 39
+- prompt 40
+- prompt 41
+- prompt 42
+- prompt 43
+- prompt 44
+- prompt 45
+- prompt 46
+- prompt 47
+- prompt 48
+- prompt 49
+- prompt 50
 */
