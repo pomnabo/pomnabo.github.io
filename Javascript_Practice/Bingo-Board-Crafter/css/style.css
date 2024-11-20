@@ -260,8 +260,8 @@ button:hover {
   left: 0;
   display: none;
   font-family: "Caviar Dreams";
-  overflow-y: hidden;
-  overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-x: scroll;
   z-index: 2;
   cursor: pointer;
 }
@@ -269,7 +269,8 @@ button:hover {
 #bingoPreview h2 {
   margin: 0 auto;
   text-align: center;
-  width: 90%;
+  width: 90%;  
+  margin-top: 2%;
   color: #DADDF2;
   background-color: #3D55CC;
   padding: 16px;
