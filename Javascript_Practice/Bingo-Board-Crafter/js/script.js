@@ -1,10 +1,9 @@
 
 const bingoTitle = document.getElementById("bingoTitle");
 const boardDiv = document.getElementById("boardContainer");
-let boxTotal;
 let bingoBoard = "";
-let colCount = 1;
-let rowCount = 1;
+let colCount = 0;
+let rowCount = 0;
 
 
 
@@ -17,7 +16,6 @@ function bingoBoardFinal() { /* when this function is called, it will generate a
     const promptsInput = document.getElementById("promptsField").value;
     let divSquare;
     let gridAxis;
-    let changeSize;
     
 
     //This will collect the prompts and put them into an array
@@ -26,9 +24,6 @@ function bingoBoardFinal() { /* when this function is called, it will generate a
     const promptLength = promptList.length;
     let newPrompt = "";
 
-    for (const prompt of promptList) {
-        
-    }
 
     function getPrompt() {
         var randomPrompt = promptList[(Math.floor(Math.random() * promptList.length))];
@@ -41,13 +36,8 @@ function bingoBoardFinal() { /* when this function is called, it will generate a
         console.log(promptList);
     }
     
-
-    
-
-    
-
-/*************************this will check to make sure the user provided useable input; and if it is present, will execute the function *****************************/
-    if(promptLength < gridSize || titleValue === ""){
+    //this will check to make sure the user provided useable input; and if it is present, will execute the function
+    if(promptLength < gridSize || titleValue === ""){ 
 
         boardDiv.classList.add("error-msg");
         document.getElementById("bingoPreview").style.display = "block";//turns on the popup preview overlay when the 'generate' button is clicked
@@ -61,7 +51,6 @@ function bingoBoardFinal() { /* when this function is called, it will generate a
         
         document.getElementById("bingoPreview").style.display = "block";//turns on the popup preview overlay when the 'generate' button is clicked
         
-
         if(gridSize == 25){
             gridAxis = 5;
         }else if(gridSize == 49){
@@ -82,44 +71,39 @@ function bingoBoardFinal() { /* when this function is called, it will generate a
                 divSquare.classList.add("bingo-7x7");
             }else{
                 divSquare.classList.add("bingo-9x9");
-            }    
+            }
 
-            
+
         }
 
-        
-
-
-        
-        
-
-        
-        while (colCount < gridAxis + 1 || rowCount < gridAxis + 1) {
-            newSquare();
-            getPrompt();
-            colCount ++;
-            rowCount ++;
-        }
-        
-      
-        
-
-    }
+        for (colCount = 0; colCount < gridAxis; colCount++) {            
+            for (rowCount = 0; rowCount < gridAxis; rowCount++) {
+                if ((colCount + rowCount) % 2 == 0) {
+                    newSquare();
+                    getPrompt();                  
+                } else {
+                    newSquare();
+                    getPrompt();                 
+                }
+            }           
+        }     
+               
+    }//end of the if/else user input check
 
 
     
 
-    console.log(gridSize, freeSwitchValue, titleValue, promptLength, gridAxis, colCount);
+    console.log(gridSize, freeSwitchValue, titleValue, promptLength, gridAxis, colCount, rowCount);
     
-}
+}//end of bingoBoardFinal function
 
 
 
 function previewOff() {
     boardDiv.classList.remove("error-msg");
     document.getElementById("bingoPreview").style.display = "none";//turns off the popup overlay when the div is clicked
-    colCount = 1;
-    rowCount = 1;
+    colCount = 0;
+    rowCount = 0;
     boardDiv.innerHTML = "";
 }
 

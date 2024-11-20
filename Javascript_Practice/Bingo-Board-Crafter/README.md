@@ -71,6 +71,8 @@ I ended up getting duplicates! So I googled how to prevent it, and in one exampl
 
 Next, I was struggling to get all the divs that get created to show up within the bingo board container div. Initially it was only showing 5 divs regardless of the size of the bingo board. After moving things around, I found that nesting a separate if/else loop inside the newsquare function would change the size of the divs as intended.
 
+My next issue was trying to create the total amount of divs based on the user's grid size selection. For this, I directly referenced the chessboard exercise from an early chapter of Eloquent JavaScript. To my delight it produced the correct number of divs as intended. But, to my chagrin , it generated them all on the same line. After looking in the wrong places for far too long, I eventually found that it was a CSS issue; an easy fix where I simply had to adjust the inline styling for the divs.
+
 
 ------------------------------
 Other Challenges:
