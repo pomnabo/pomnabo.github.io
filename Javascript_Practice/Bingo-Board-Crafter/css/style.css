@@ -314,18 +314,25 @@ button:hover {
 
 .bingo-5x5 {
   width: 20%;
-  max-height: 20%;
+  max-height: 150px;
   font-size: 1.3em;
   overflow: hidden;
 }
 
 .bingo-7x7 {
   width: 14.2%;
-  max-height: 14.2%;
+  max-height: 150px;
+  overflow: hidden;
 }
 
 .bingo-9x9 {
   width: 11.1%;
-  max-height: 11.11%;
+  max-height: 150px;
   font-size: 0.8em;
+  overflow: hidden;
+}
+
+.free-square {
+  position: relative;
+  margin: 0 auto;
 }

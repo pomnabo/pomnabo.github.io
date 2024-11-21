@@ -7,6 +7,7 @@ let rowCount = 0;
 
 
 
+
 function bingoBoardFinal() { /* when this function is called, it will generate a grid of squares based on the user criteria */
 
     /* variables MUST be present inside the function to get the input value when the button is called. this is because we only want to call those variables and their user input when the button is called. If they are declared before that action, it will only provide the default options present, and won't change upon user input */
@@ -14,8 +15,10 @@ function bingoBoardFinal() { /* when this function is called, it will generate a
     const freeSwitchValue = document.getElementById("freeSwitch").checked;
     const titleValue = document.getElementById("titleInput").value.trim();
     const promptsInput = document.getElementById("promptsField").value;
+    const gridCtr = ((gridSize - 1) / 2) + 1;
     let divSquare;
     let gridAxis;
+    let idCount = 1;
     
 
     //This will collect the prompts and put them into an array
@@ -24,17 +27,9 @@ function bingoBoardFinal() { /* when this function is called, it will generate a
     const promptLength = promptList.length;
     let newPrompt = "";
 
+    
 
-    function getPrompt() {
-        var randomPrompt = promptList[(Math.floor(Math.random() * promptList.length))];
-        const promptIndex = promptList.indexOf(randomPrompt);
-        
-        newPrompt = randomPrompt;
-        divSquare.innerHTML = newPrompt;
-        
-        promptList.splice(promptIndex, 1);//This will remove items from the array so they aren't reused in subsequent squares
-        console.log(promptList);
-    }
+    
     
     //this will check to make sure the user provided useable input; and if it is present, will execute the function
     if(promptLength < gridSize || titleValue === ""){ 
@@ -60,9 +55,12 @@ function bingoBoardFinal() { /* when this function is called, it will generate a
         }        
         
 
+        /* This creates a new div and assigns an Id number to each */
         function newSquare() {
             divSquare = document.createElement("div");
             divSquare.classList.add("bingo-box");
+            divSquare.id = `${idCount}`;
+            idCount++;
             boardDiv.appendChild(divSquare);
 
             if(gridAxis == 5){
@@ -71,11 +69,20 @@ function bingoBoardFinal() { /* when this function is called, it will generate a
                 divSquare.classList.add("bingo-7x7");
             }else{
                 divSquare.classList.add("bingo-9x9");
-            }
-
-
+            }            
         }
 
+        /* This randomly selects a prompt from the user input, adds it to a div, and then removes it from the array */
+        function getPrompt() {
+            var randomPrompt = promptList[(Math.floor(Math.random() * promptList.length))];
+            const promptIndex = promptList.indexOf(randomPrompt);          
+            newPrompt = randomPrompt;
+            divSquare.innerHTML = newPrompt;
+            
+            promptList.splice(promptIndex, 1);//This will remove items from the array so they aren't reused in subsequent squares
+        }
+
+        /* This is the function to generate the divs and simultaneously adds the prompts inside them */
         for (colCount = 0; colCount < gridAxis; colCount++) {            
             for (rowCount = 0; rowCount < gridAxis; rowCount++) {
                 if ((colCount + rowCount) % 2 == 0) {
@@ -86,14 +93,34 @@ function bingoBoardFinal() { /* when this function is called, it will generate a
                     getPrompt();                 
                 }
             }           
-        }     
-               
+        }
+
+        /* This targets the center div and removes its contents */
+        if(freeSwitchValue == false){//if the switch is set to "Yes"
+            let freeSquare = document.getElementById(gridCtr);
+            freeSquare.innerHTML = "";
+            freeSquare.classList.add("free-square");
+
+            if(gridAxis == 5){
+                freeSquare.classList.add("bingo-5x5");
+            }else if(gridAxis == 7){
+                freeSquare.classList.add("bingo-7x7");
+            }else{
+                freeSquare.classList.add("bingo-9x9");
+            }
+        }
+
+        
+        //need to make media queries for different screen sizes and change the dimensions of each square AND font size for each breakpoint.
+        
+
+
     }//end of the if/else user input check
 
 
     
 
-    console.log(gridSize, freeSwitchValue, titleValue, promptLength, gridAxis, colCount, rowCount);
+    console.log(gridSize, freeSwitchValue, titleValue, promptLength, gridAxis, colCount, rowCount, gridCtr);
     
 }//end of bingoBoardFinal function
 
