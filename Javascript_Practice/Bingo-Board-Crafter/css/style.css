@@ -363,7 +363,8 @@ i {
   border-radius: 8px;
   display: inline-block;
   cursor: pointer;
-  text-align: center;
+  text-align: center;  
+  z-index: 3;
 }
 
 .menu-btn:hover {

@@ -88,7 +88,7 @@ For smoother UI/UX, I felt nesting the instructions inside a toggle-able drop do
 
 To be more user friendly, I felt a toggle switch would be ideal over a check box for the "free space" selection. I found a few different ways to make this through google, and ultimately I settled with the one I found on w3schools.com; it's the only one that worked properly compared to the ones I found on other sites.
 
-Once I got the board generating as intended, I wanted to provide a way for users to download just the div containing their board (rather than them having to take a screenshot to save it). To do this, I wanted to add some UX/UI icons in a mobile friendly menu button. I spent way too long
+Once I got the board generating as intended, I wanted to provide a way for users to download just the div containing their board (rather than them having to take a screenshot to save it). To do this, I wanted to add some UX/UI icons in a mobile friendly drop down menu. During my first attempt, I spent way too long trying to generate the button and all its icons and styling through javascript; resulted in a lot of bloat in my opinion. So I scrapped that code to start fresh on a new menu. I resolved to instead write the menu into the html, and just change the display styling in a similar way to the bingo board. This worked as I initially intended for it. I did encounter a slight issue where I had mistakenly set the menu's items to z-index 3 (as suggested through stack overflow). Once I changed to apply it to the menu button itself, the code suggested by w3schools worked smoothly.
 
 
 ------------------------------
