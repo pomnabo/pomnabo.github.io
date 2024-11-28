@@ -367,7 +367,7 @@ i {
   z-index: 3;
 }
 
-.menu-btn:hover {
+.menu-btn:hover, .menu-btn:active {
   background-color: #DADDF2;
   color: #3D55CC;
   transition: ease-in-out 0.2s;
@@ -400,13 +400,13 @@ i {
   flex-direction: column;
 }
 
-.menu-item:hover {
+.menu-item:hover, .menu-item:active {
   background-color: #3D55CC;
   color: #DADDF2;
   transition: ease-in-out 0.2s;
 }
 
-#closeBtn:hover {
+#closeBtn:hover, #closeBtn:active {
   background-color: #8D556D;
   color: #DADDF2;
   transition: ease-in-out 0.2s;

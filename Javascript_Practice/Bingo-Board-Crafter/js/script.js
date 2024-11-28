@@ -129,6 +129,7 @@ function previewOff() {
     colCount = 0;
     rowCount = 0;
     boardDiv.innerHTML = "";
+    menuContainer.style.display = "none";
 }
 
 /* This adds in the dropdown menu items */
