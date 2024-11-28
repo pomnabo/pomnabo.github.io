@@ -14,8 +14,11 @@ Nymphont License v1.00
 
 This license can also be found at this permalink: https://www.fontsquirrel.com/license/Caviar-Dreams
 
-Glyph Icons courtesy of GlyphIcons:
-https://glyphicons.com/
+
+"Material Symbols" Icon Set courtesy of Google
+https://fonts.google.com/icons
+https://www.apache.org/licenses/LICENSE-2.0.html
+
 
 
 App designed and built by me, pomnabo.
@@ -54,9 +57,13 @@ I then wanted to create the "free space" default div and apply it to the center 
 
 I later realized that I think it would be helpful to nest this all inside a if/then alert, so to ensure that users fill in each spot. I also realized that I need to make sure there are a minimum of enough prompts provided based on the gride size selection. Lastly, I need to apply a character limit to the prompts somehow.
 
+After getting the board working smoothly, I decided to add an additional input field so users could customize the text inside the center free square. I also made the field disappear when users opt "No" for the free space.
+
+(NOTE: if you refresh the page while the free space toggle is set to "No," the free space input field will still appear. After some troubleshooting, I found it's an issue with the styling of the checkbox. I don't think I will bother fixing this anytime soon)
+
 
 Result:
-Once the button gets push, I will have the board generate in a popup overlay.
+Once the button gets push, the board generate in a popup overlay.
 
 ------------------------------
 Coding Challenges:
@@ -80,6 +87,8 @@ Other Challenges:
 For smoother UI/UX, I felt nesting the instructions inside a toggle-able drop down menu would be ideal; this way, users who are familiar with how to use the crafter can keep it minimized to save screen space, *especially* if they're doing it from their phones. The first thing recommended through google searching was the "details" element. I'd never used it before, so it was fun to play around with. When first applied, the arrow appeared above it's summary, but I wanted it aligned; google searching again helped haha, and applying "display: flex;" did the trick.
 
 To be more user friendly, I felt a toggle switch would be ideal over a check box for the "free space" selection. I found a few different ways to make this through google, and ultimately I settled with the one I found on w3schools.com; it's the only one that worked properly compared to the ones I found on other sites.
+
+Once I got the board generating as intended, I wanted to provide a way for users to download just the div containing their board (rather than them having to take a screenshot to save it). To do this, I wanted to add some UX/UI icons in a mobile friendly menu button. I spent way too long
 
 
 ------------------------------

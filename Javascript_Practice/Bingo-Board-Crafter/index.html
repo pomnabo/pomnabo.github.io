@@ -6,8 +6,11 @@
 
 <title>Bingo Board Crafter</title>
 
+
+
 <link rel="stylesheet" href="css/style.css" type="text/css">
 <script defer src="js/script.js"></script>
+
 <!-- Use "defer" when adding javascript files so that the javascript loads after the rest of the page has loaded first -->
 
 </head>
@@ -21,10 +24,16 @@
         <div class="instructions">            
             <details class="toggle-menu"><summary>Instructions:</summary>
                 <ul>
-                    <li>Use the dropdown menu to select the number of boxes you want for your bingo card(s).</li>
-                    <li>Give your bingo card a title and type your bingo card prompts into the text box below. Use a dash "-" before each prompt to indicate a new box item. You must provide the minimum number of prompts to fill the board. You may also provide additional prompts beyond the maximum for more unique cards.</li>
-                    <li>Toggle the switch on or off to apply a fixed "Free Space" box in the center of your board. You may also type your own custom "free space" in the text area below as its own box item.</li>                
-                    <li>When finished, click the "generate" button to create your randomized bingo card. Click the button again to generate alternative randomized placements. Your bingo card will generate in a new window.</li>
+                    <li>Choose your bingo board size.</li>
+                    <li>Toggle the switch to apply a fixed "Free Space" box in the center of your board.
+                        <br>* You may also type your own custom "free space" in the text area below as its own box item.</li>
+                    <li>Type your own text for the free square (optional).</li>
+                    <li>Give your bingo card a title.</li>
+                    <li>Type your bingo prompts into the text box below. Use a dash "-" before each prompt. 
+                        <br>* You must provide the minimum number of prompts to fill the board.
+                        <br>* You may also provide additional prompts beyond the maximum for more unique cards.</li>
+                                    
+                    <li>Click the "generate" button to create your randomized bingo card.</li>
                     <li>You can click the printer icon to save your board as an image file, or the download icon to save as a pdf.</li>
                 </ul>
             </details>
@@ -46,13 +55,13 @@
                 
                 <!------------------------------ Toggle Switch ----------------------------------------------------->
                 <div class="crafter-items" id="toggleSwitch">
-                    <span>
+                    <span class="toggle-title">
                         Do you want a "free space" in the center?
                     </span>
                     <br>
                     <span class="yes-no">Yes</span>
                     <label for="freeSwitch" class="toggle-switch">
-                        <input type="checkbox" id="freeSwitch" class="free-switch">                        
+                        <input type="checkbox" id="freeSwitch" class="free-switch" onchange="customFreeSpace()">                        
                         <span class="toggle-handle"></span>
                     </label>
                     <span class="yes-no">No</span>
@@ -60,15 +69,24 @@
                     
                 </div>
 
+                <!------------------------------ Free Square Text ----------------------------------------------------->
+                <div class="crafter-items" id="cstmFree">
+                    <span>
+                        Customize the free space text
+                    </span>
+                    <br>
+                    <input type="text" class="input-field" id="freeSpaceInput" placeholder="Free Space">
+
+
+                </div>
+
                 <!------------------------------ Title Input Field ----------------------------------------------------->
                 <div class="crafter-items">
                     <label for="titleInput">Bingo Board Title:</label>
                     <br>
-                    <input type="text" id="titleInput" placeholder="Write your title here.">
+                    <input type="text" class="input-field" id="titleInput" placeholder="Write your title here.">
                 </div>
 
-            
-                
                 <!------------------------------ Prompts Field ----------------------------------------------------->
                 <div class="crafter-items">
                     <label for="promptsField">Bingo Prompts:</label>
@@ -81,7 +99,7 @@
             </form>            
 
             <div class="btn-div">
-                <button id="makeBingoBtn" onclick="bingoBoardFinal()">Generate</button>
+                <button id="makeBingoBtn" onclick="bingoBoardFinal()">Generate</button>                
             </div>
 
         </div>
@@ -89,10 +107,40 @@
     </div>
 
     <!-------------------  Completed Board Section ---------------------------------------------------------------------------->
-    <div class="bingo-board-preview" id="bingoPreview" onclick="previewOff()">
-        <h2 id="bingoTitle"></h2>
-        <div class="board-container" id="boardContainer"></div>    
+    <div class="bingo-board-preview" id="bingoPreview">
+        
+        <!----------------Bingo Title Section ---------------------->
+        <div id="titleContainer" class="title-container">
+            <span id="menuBtn" onclick="toggleMenu()">
+                <i class="menu-btn">menu</i>
+            </span>
+            <h2 id="bingoTitle"></h2>            
+        </div>        
+
+        <!---------------- Board Section --------------------->
+        <div class="board-container" id="boardContainer"></div>
+
+        <!------------------ Dropdown menu ------------------>
+        <div id="menuContainer" class="menu-container">            
+            <div id="menuList" class="menu-list">
+                <span class="menu-item">
+                    <i>print</i>
+                    <br>Print
+                </span>
+                <span class="menu-item">
+                    <i>download</i>
+                    <br>Download
+                </span>
+                <span id="closeBtn" class="close-btn, menu-item">
+                    <i>close</i>
+                    <br>Close
+                </span>
+            </div>
+        </div>
     </div>
 
+
+    
+    
 </body>
 </html>

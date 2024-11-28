@@ -1,16 +1,22 @@
 
 const bingoTitle = document.getElementById("bingoTitle");
 const boardDiv = document.getElementById("boardContainer");
-let bingoBoard = "";
 let colCount = 0;
 let rowCount = 0;
 
-
+/* This will hide the free space text field when the user switches it to "NO" */
+function customFreeSpace() {
+    if (document.getElementById("freeSwitch").checked) {
+        document.getElementById("cstmFree").style.display = "none";
+    } else {
+        document.getElementById("cstmFree").style.display = "block";
+    }
+}
 
 
 function bingoBoardFinal() { /* when this function is called, it will generate a grid of squares based on the user criteria */
 
-    /* variables MUST be present inside the function to get the input value when the button is called. this is because we only want to call those variables and their user input when the button is called. If they are declared before that action, it will only provide the default options present, and won't change upon user input */
+    /* these variables MUST be present inside the function to get the input value when the button is called. this is because we only want to call those variables and their user input when the button is called. If they are declared before that action, it will only provide the default options present, and won't change upon user input */
     const gridSize = document.getElementById("grid-size").value;
     const freeSwitchValue = document.getElementById("freeSwitch").checked;
     const titleValue = document.getElementById("titleInput").value.trim();
@@ -18,21 +24,16 @@ function bingoBoardFinal() { /* when this function is called, it will generate a
     const gridCtr = ((gridSize - 1) / 2) + 1;
     let divSquare;
     let gridAxis;
-    let idCount = 1;
-    
+    let idCount = 1;    
 
     //This will collect the prompts and put them into an array
     const promptList = promptsInput.split("-");
     promptList.shift(); //removes the empty string from the first item of the array.
     const promptLength = promptList.length;
-    let newPrompt = "";
-
-    
-
-    
+    let newPrompt = "";   
     
     //this will check to make sure the user provided useable input; and if it is present, will execute the function
-    if(promptLength < gridSize || titleValue === ""){ 
+    if(promptLength < gridSize){ 
 
         boardDiv.classList.add("error-msg");
         document.getElementById("bingoPreview").style.display = "block";//turns on the popup preview overlay when the 'generate' button is clicked
@@ -40,12 +41,15 @@ function bingoBoardFinal() { /* when this function is called, it will generate a
         boardDiv.innerHTML = "You forgot to fill something in."
         
     }
-    else {
-        /* this loop needs to be presented in the order the values are arranged in the document, otherwise it will declare "undefined" */
-        bingoTitle.innerHTML = titleValue;
+    else {/* this loop needs to be presented in the order the values are arranged in the document, otherwise it will declare "undefined" */
+
+        /* This adds the user input title to the bingo board */
+        bingoTitle.innerHTML = titleValue;       
+   
+        /* This turns on the popup preview overlay when the 'generate' button is clicked */
+        document.getElementById("bingoPreview").style.display = "block";
         
-        document.getElementById("bingoPreview").style.display = "block";//turns on the popup preview overlay when the 'generate' button is clicked
-        
+        /* This changes the grid axis values */
         if(gridSize == 25){
             gridAxis = 5;
         }else if(gridSize == 49){
@@ -97,41 +101,45 @@ function bingoBoardFinal() { /* when this function is called, it will generate a
 
         /* This targets the center div and removes its contents */
         if(freeSwitchValue == false){//if the switch is set to "Yes"
+            let freeSpaceInput = document.getElementById("freeSpaceInput").value;
             let freeSquare = document.getElementById(gridCtr);
-            freeSquare.innerHTML = "";
-            freeSquare.classList.add("free-square");
-
-            if(gridAxis == 5){
-                freeSquare.classList.add("bingo-5x5");
-            }else if(gridAxis == 7){
-                freeSquare.classList.add("bingo-7x7");
-            }else{
-                freeSquare.classList.add("bingo-9x9");
-            }
+            freeSquare.innerHTML = freeSpaceInput;
         }
+        
 
         
         //need to make media queries for different screen sizes and change the dimensions of each square AND font size for each breakpoint.
+        //planned customizing styles: glassmorphic with gradiant background; can change colors. basic color changing and font selection
+
+        //make hamburger menu with the print, download, and close icons>>>> use the "menu" icon>>>replace the close icon with hamburger menu
         
 
 
-    }//end of the if/else user input check
-
-
-    
+    }//end of the if/else user input check    
 
     console.log(gridSize, freeSwitchValue, titleValue, promptLength, gridAxis, colCount, rowCount, gridCtr);
     
 }//end of bingoBoardFinal function
 
 
-
+/* This will close the popup window */
 function previewOff() {
     boardDiv.classList.remove("error-msg");
     document.getElementById("bingoPreview").style.display = "none";//turns off the popup overlay when the div is clicked
     colCount = 0;
     rowCount = 0;
     boardDiv.innerHTML = "";
+}
+
+/* This adds in the dropdown menu items */
+function toggleMenu() {
+    const menuContainer = document.getElementById("menuContainer");            
+    if (menuContainer.style.display === "block") {
+        menuContainer.style.display = "none";
+    } else {
+        menuContainer.style.display = "block";
+        closeBtn.addEventListener("click", previewOff);                
+    }
 }
 
 
