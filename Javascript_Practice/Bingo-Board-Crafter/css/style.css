@@ -511,11 +511,8 @@ i {
 }
 
 
-
-
-
-/**** Smaller Devices ****/
-@media (max-width: 768px) {
+/**** Tablets & Large Phones ****/
+@media (min-width: 481px) and (max-width: 768px) {
 
   .title-container {
     width:420px;
@@ -559,3 +556,47 @@ i {
 
 }
 
+/**** Tablets & Large Phones ****/
+@media (max-width: 480px) {
+
+  .title-container {
+    width:385px;
+  }
+  .board-container {
+    width: 385px;
+    margin: 0 auto;
+    text-align: center;
+    }
+
+  /** Bingo Squares **/
+  .bingo-5x5 {
+    margin: 0 auto;
+    align-items: center;
+    width: 77px;
+    height: 77px;
+    font-size: 0.8em;
+    overflow: hidden;
+    padding: 8px;    
+  }
+  
+  .bingo-7x7 {
+    margin: 0 auto;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    font-size: 0.6em;
+    overflow: hidden;
+    padding: 4px;
+  }
+  
+  .bingo-9x9 {
+    margin: 0 auto;
+    align-items: center;
+    width: 42.7px;
+    height: 42.7px;
+    font-size: 0.4em;
+    overflow: hidden;
+    padding: 4px;
+  }
+
+}
