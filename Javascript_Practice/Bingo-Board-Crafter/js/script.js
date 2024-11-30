@@ -40,8 +40,7 @@ function bingoBoardFinal() { /* when this function is called, it will generate a
         bingoTitle.innerHTML = "Whoopsiedoodle!";
         boardDiv.innerHTML = "You forgot to fill something in."
         
-    }
-    else {/* this loop needs to be presented in the order the values are arranged in the document, otherwise it will declare "undefined" */
+    } else {/* this loop needs to be presented in the order the values are arranged in the document, otherwise it will declare "undefined" */
 
         /* This adds the user input title to the bingo board */
         bingoTitle.innerHTML = titleValue;       
@@ -106,31 +105,20 @@ function bingoBoardFinal() { /* when this function is called, it will generate a
             freeSquare.innerHTML = freeSpaceInput;
         }
         
-
         
+        //add print and download functions for their respective icons
         //need to make media queries for different screen sizes and change the dimensions of each square AND font size for each breakpoint.
         //planned customizing styles: glassmorphic with gradiant background; can change colors. basic color changing and font selection
+        //planned app function: save the div to user profile along with it's customization settings
+        //planned app function: interactive bingo boards; self managed, or synced with others in the group
 
-        //make hamburger menu with the print, download, and close icons>>>> use the "menu" icon>>>replace the close icon with hamburger menu
-        
-
-
+       
     }//end of the if/else user input check    
 
     console.log(gridSize, freeSwitchValue, titleValue, promptLength, gridAxis, colCount, rowCount, gridCtr);
     
 }//end of bingoBoardFinal function
 
-
-/* This will close the popup window */
-function previewOff() {
-    boardDiv.classList.remove("error-msg");
-    document.getElementById("bingoPreview").style.display = "none";//turns off the popup overlay when the div is clicked
-    colCount = 0;
-    rowCount = 0;
-    boardDiv.innerHTML = "";
-    menuContainer.style.display = "none";
-}
 
 /* This adds in the dropdown menu items */
 function toggleMenu() {
@@ -141,6 +129,24 @@ function toggleMenu() {
         menuContainer.style.display = "block";
         closeBtn.addEventListener("click", previewOff);                
     }
+}
+
+function printBingo() {
+    let printWindow = window.open ('', 'PRINT');
+    printWindow.document.write(document.getElementById("bingoPreview").innerHTML);
+    printWindow.print();
+    printWindow.close();
+}
+
+
+/* This will close the popup window */
+function previewOff() {
+    boardDiv.classList.remove("error-msg");
+    document.getElementById("bingoPreview").style.display = "none";//turns off the popup overlay when the div is clicked
+    colCount = 0;
+    rowCount = 0;
+    boardDiv.innerHTML = "";
+    menuContainer.style.display = "none";
 }
 
 

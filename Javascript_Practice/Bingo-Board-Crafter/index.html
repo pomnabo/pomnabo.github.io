@@ -114,20 +114,16 @@
             <span id="menuBtn" onclick="toggleMenu()">
                 <i class="menu-btn">menu</i>
             </span>
-            <h2 id="bingoTitle"></h2>            
-        </div>        
-
-        <!---------------- Board Section --------------------->
-        <div class="board-container" id="boardContainer"></div>
-
-        <!------------------ Dropdown menu ------------------>
+            <h2 id="bingoTitle"></h2>
+            
+            <!------------------ Dropdown menu ------------------>
         <div id="menuContainer" class="menu-container">            
             <div id="menuList" class="menu-list">
-                <span class="menu-item">
+                <span class="menu-item" onclick="printBingo()">
                     <i>print</i>
                     <br>Print
                 </span>
-                <span class="menu-item">
+                <span class="menu-item" onclick="downloadBingo()">
                     <i>download</i>
                     <br>Download
                 </span>
@@ -137,6 +133,13 @@
                 </span>
             </div>
         </div>
+        
+        </div>        
+
+        <!---------------- Board Section --------------------->
+        <div class="board-container" id="boardContainer"></div>
+
+        
     </div>
 
 

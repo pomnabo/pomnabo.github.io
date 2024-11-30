@@ -222,7 +222,6 @@ input:checked + .toggle-handle:before {
   color: #DADDF2;
 }
 
-
 textarea {
   margin: 0 auto;
   margin-top: 8px;
@@ -271,6 +270,7 @@ button:hover {
 /******************************* Bingo Board *******************************/
 
 #bingoPreview {
+  margin: 0 auto;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.7);
   height: 100%;
@@ -289,12 +289,8 @@ button:hover {
 .title-container {
   margin: 0 auto;  
   background-color: #3D55CC;
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
   margin-top: 20px;
   padding: 8px;
-  display: inline-flex;
 }
 
 #bingoPreview h2 {
@@ -303,23 +299,14 @@ button:hover {
   color: #DADDF2;
   padding: 8px;
   font-size: 2em;
-  position: relative;
 }
 
 .board-container {
-  margin: 0 auto;
-  margin-left: 5%;
-  margin-right: 5%;
-  text-align: center;
-  width: 90%;
   background-color: #DADDF2;
-  float: left;
 }
 
 .error-msg {
   margin: 0 auto;
-  margin-left: 5%;
-  margin-right: 5%;
   text-align: center;
   color: #8D556D;
   font-size: 1.8em;
@@ -349,7 +336,6 @@ i {
 .menu-container {      
   position: absolute;
   top: 16px;
-  left: 5%;
   display: none;
 }
 
@@ -377,20 +363,20 @@ i {
   margin: 0 auto;
   text-align: center;
   position: relative;
-  margin-left: 10%;
   margin-top: 86px;
-  background-color: #DADDF2;
+  background-color: #3D55CC;
   font-weight: bold;
   flex-direction: column;
   display: inline-flex;
   flex-direction: column;
   padding: 8px;
-  border: 8px solid #3D55CC;
   border-radius: 8px;
+  box-shadow: 4px 4px 4px 4px #1E2A66;
+  z-index: 3;
 }
 
 .menu-item {
-  color: #3D55CC;
+  color: #DADDF2;
   font-size: 1.2em;
   text-align: center;  
   padding: 12px;
@@ -401,8 +387,8 @@ i {
 }
 
 .menu-item:hover, .menu-item:active {
-  background-color: #3D55CC;
-  color: #DADDF2;
+  background-color: #DADDF2;
+  color: #3D55CC;
   transition: ease-in-out 0.2s;
 }
 
@@ -422,30 +408,154 @@ i {
   hyphens: auto;
   hyphenate-limit-chars: 12;
   font-weight: bold;
-  padding: 2% 3%;
   color: #3D55CC;
   position: relative;
   border: 4px solid #3D55CC;
   float: left;
+  background-color: #DADDF2;
 }
 
-.bingo-5x5 {
-  width: 20%;
-  max-height: 150px;
-  font-size: 1.3em;
-  overflow: hidden;
+
+
+/************************* Media Queries ****************************************/
+
+
+/****** Larger Screens ******/
+@media (min-width: 1280px) {
+
+  .title-container {
+    width: 945px;
+  }
+  .board-container {
+    width: 945px;
+    margin: 0 auto;
+    text-align: center;
+    }
+
+  /** Bingo Squares **/
+  .bingo-5x5 {
+    margin: 0 auto;
+    align-items: center;
+    width: 189px;
+    height: 189px;
+    font-size: 1.3em;
+    overflow: hidden;
+    padding: 16px;    
+  }
+  
+  .bingo-7x7 {
+    margin: 0 auto;
+    align-items: center;
+    width: 135px;
+    height: 135px;
+    overflow: hidden;
+    padding: 12px;
+  }
+  
+  .bingo-9x9 {
+    margin: 0 auto;
+    align-items: center;
+    width: 105px;
+    height: 105px;
+    font-size: 0.8em;
+    overflow: hidden;
+    padding: 8px;
+  }  
+
 }
 
-.bingo-7x7 {
-  width: 14.2%;
-  max-height: 150px;
-  overflow: hidden;
+
+/******* Laptops & Tablets *******/
+@media (min-width: 769px) and (max-width: 1279px) {
+
+  .title-container {
+    width: 630px;
+  }
+  .board-container {
+    width: 630px;
+    margin: 0 auto;
+    text-align: center;
+    }
+
+  /** Bingo Squares **/
+  .bingo-5x5 {
+    margin: 0 auto;
+    align-items: center;
+    width: 126px;
+    height: 126px;
+    font-size: 1em;
+    overflow: hidden;
+    padding: 12px;    
+  }
+  
+  .bingo-7x7 {
+    margin: 0 auto;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    font-size: 0.8em;
+    overflow: hidden;
+    padding: 8px;
+  }
+  
+  .bingo-9x9 {
+    margin: 0 auto;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    font-size: 0.6em;
+    overflow: hidden;
+    padding: 4px;
+  }
+
 }
 
-.bingo-9x9 {
-  width: 11.1%;
-  max-height: 150px;
-  font-size: 0.8em;
-  overflow: hidden;
+
+
+
+
+/**** Smaller Devices ****/
+@media (max-width: 768px) {
+
+  .title-container {
+    width:420px;
+  }
+  .board-container {
+    width: 420px;
+    margin: 0 auto;
+    text-align: center;
+    }
+
+  /** Bingo Squares **/
+  .bingo-5x5 {
+    margin: 0 auto;
+    align-items: center;
+    width: 84px;
+    height: 84px;
+    font-size: 0.8em;
+    overflow: hidden;
+    padding: 8px;    
+  }
+  
+  .bingo-7x7 {
+    margin: 0 auto;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    font-size: 0.6em;
+    overflow: hidden;
+    padding: 4px;
+  }
+  
+  .bingo-9x9 {
+    margin: 0 auto;
+    align-items: center;
+    width: 46.6px;
+    height: 46.6px;
+    font-size: 0.4em;
+    overflow: hidden;
+    padding: 4px;
+  }
+
 }
 
