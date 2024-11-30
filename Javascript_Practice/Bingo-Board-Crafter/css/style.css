@@ -293,10 +293,11 @@ button:hover {
   padding: 8px;
 }
 
-#bingoPreview h2 {
+#bingoTitle {
   margin: 0 auto;
   text-align: center;
   color: #DADDF2;
+  background-color: #3D55CC;
   padding: 8px;
   font-size: 2em;
 }

@@ -132,10 +132,17 @@ function toggleMenu() {
 }
 
 function printBingo() {
-    let printWindow = window.open ('', 'PRINT');
-    printWindow.document.write(document.getElementById("bingoPreview").innerHTML);
-    printWindow.print();
-    printWindow.close();
+    const getBoard = document.querySelector("bingoPreview");
+    menuContainer.style.display = "none";
+    window.print();
+}
+
+function downloadBingo() {
+    const makeImg = document.getElementById("bingoPreview");
+    html2canvas(makeImg).then((canvas) => {
+        const base64image = canvas.toDataURL("image/png");
+        window.location.href = base64image;
+    });
 }
 
 
