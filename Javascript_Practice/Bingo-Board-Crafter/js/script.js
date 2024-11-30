@@ -138,7 +138,9 @@ function printBingo() {
 }
 
 function downloadBingo() {
+    menuContainer.style.display = "none";
     const makeImg = document.getElementById("bingoPreview");
+    //makeImg.classList.add("zoom-out");
     html2canvas(makeImg).then((canvas) => {
         const base64image = canvas.toDataURL("image/png");
         window.location.href = base64image;

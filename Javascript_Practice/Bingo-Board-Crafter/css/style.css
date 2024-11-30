@@ -418,7 +418,26 @@ i {
 
 
 
+.zoom-out {
+  zoom: 0.6;
+}
+
+
 /************************* Media Queries ****************************************/
+
+@media print {
+  
+  body {
+    visibility: hidden;
+  }
+  
+  #bingoPreview {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
 
 
 /****** Larger Screens ******/
