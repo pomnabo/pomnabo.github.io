@@ -427,7 +427,7 @@ i {
 
 @media print {
   
-  body {
+  #dontPrint {
     visibility: hidden;
   }
   
@@ -614,7 +614,7 @@ i {
     align-items: center;
     width: 42.7px;
     height: 42.7px;
-    font-size: 0.4em;
+    font-size: 0.2em;
     overflow: hidden;
     padding: 4px;
   }
