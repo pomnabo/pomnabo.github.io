@@ -26,6 +26,8 @@ function bingoBoardFinal() { /* when this function is called, it will generate a
     let gridAxis;
     let idCount = 1;    
 
+    document.getElementById("bingoPreview").style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+
     //This will collect the prompts and put them into an array
     const promptList = promptsInput.split("-");
     promptList.shift(); //removes the empty string from the first item of the array.
@@ -106,11 +108,13 @@ function bingoBoardFinal() { /* when this function is called, it will generate a
         }
         
         
-        //add print and download functions for their respective icons
-        //need to make media queries for different screen sizes and change the dimensions of each square AND font size for each breakpoint.
+        //change error msg background to white ONLY when printing******************
+
+
         //planned customizing styles: glassmorphic with gradiant background; can change colors. basic color changing and font selection
         //planned app function: save the div to user profile along with it's customization settings
         //planned app function: interactive bingo boards; self managed, or synced with others in the group
+        //planned app function: pre-written bingo prompts based on genre
 
        
     }//end of the if/else user input check    
@@ -133,6 +137,7 @@ function toggleMenu() {
 
 function printBingo() {
     const getBoard = document.querySelector("bingoPreview");
+    document.getElementById("bingoPreview").style.backgroundColor = "rgba(255, 255, 255, 0.7)";
     menuContainer.style.display = "none";
     window.print();
 }
